@@ -15,4 +15,8 @@ public class Room {
 	class ObstacleRoom extends Room {
 		
 	}
+	
+	class TestRoom extends Room {
+		
+	}
 }
