@@ -2,7 +2,7 @@ package game;
 
 public class Room {
 	
-	//HEhehhehfuewhiuhfhewaof
+	//Toimiikos tämä nyt
 
 	class TrapRoom extends Room {
 		
