@@ -8,7 +8,7 @@ public class Inventory {
 	public Inventory(Item inventoryItem){
 		Inventory.inventoryItem = inventoryItem;
 	}
-
+	
 	public ArrayList<Item> getInventory(){
 		ArrayList<Item> itemInventory = new ArrayList<Item>();
 		return itemInventory;
