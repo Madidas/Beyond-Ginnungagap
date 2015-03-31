@@ -12,5 +12,3 @@ public class InputReader {
 		return inputLine;
 	}
 }
-
-//asd
