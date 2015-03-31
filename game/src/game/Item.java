@@ -9,4 +9,8 @@ public class Item {
 	
 	ArrayList<String> itemProperties = new ArrayList<String>();	
 	
+	public class CanOfBeans extends Item {
+		
+	}
+	
 }
