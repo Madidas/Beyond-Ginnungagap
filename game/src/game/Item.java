@@ -8,6 +8,10 @@ public class Item {
 	
 	ArrayList<String> itemProperties = new ArrayList<String>();
 	
+	public interface IsIdentifiable {
+		public void identify(String itemDescription);
+	}
+	
 	public interface IsUsable {
 	}
 	
@@ -18,8 +22,12 @@ public class Item {
 	}
 	
 	public interface IsEdible {
+		public void eat();
 	}
 	
 	public class CanOfBeans extends Item implements IsEdible {
+		public void eat(){
+		eat();	
+		}		
 	}
 }
