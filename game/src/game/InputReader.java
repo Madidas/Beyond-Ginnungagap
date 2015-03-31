@@ -11,4 +11,4 @@ public class InputReader {
 		String inputLine = playerInput.nextLine();
 		return inputLine;
 	}
-}
+}//
