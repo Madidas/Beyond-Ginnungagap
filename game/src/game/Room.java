@@ -1,5 +1,7 @@
 package game;
 
+import java.util.HashMap;
+
 public class Room {
 	
 	//Will this work now
@@ -17,6 +19,13 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
-		
+		public static HashMap<String,String> roomItems() {
+			HashMap<String,Action> itemHashmap = new HashMap<String,String>();
+			
+			translations.put("eat", Eat);
+			translations.put("identify", Identify);
+			
+			return itemHashmap;
+		}		
 	}
 }
