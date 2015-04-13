@@ -2,9 +2,6 @@ package game;
 
 import java.util.HashMap;
 
-import translator.InputReader;
-import translator.Translator;
-
 public class Room {
 	
 	//Will this work now

@@ -71,6 +71,7 @@ public class Location
 	}
 
 	// Returns a vector of exits
+	@SuppressWarnings("unchecked")
 	public Vector<Exit> getExits ()
 	{
 		// Return a clone, as we don't want an external
