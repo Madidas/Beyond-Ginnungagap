@@ -2,6 +2,9 @@ package game;
 
 import java.util.HashMap;
 
+import translator.InputReader;
+import translator.Translator;
+
 public class Room {
 	
 	//Will this work now
@@ -19,13 +22,16 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
-		public static HashMap<String,String> roomItems() {
-			HashMap<String,Action> itemHashmap = new HashMap<String,String>();
-			
-			translations.put("eat", Eat);
-			translations.put("identify", Identify);
-			
-			return itemHashmap;
-		}		
+		private static Inventory testroomInventory;
+		
+		public TestRoom(Inventory testroomInventory) {
+			TestRoom.testroomInventory = testroomInventory;
+		}
+		testroom
+		
+		System.out.println("You're in TestRoom");
+		System.out.println("Room's inventory:");
+		
+		
 	}
 }
