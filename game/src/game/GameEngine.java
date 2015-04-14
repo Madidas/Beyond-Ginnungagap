@@ -2,7 +2,11 @@ package game;
 
 public class GameEngine {
 
-	public interface Action {
-		
-	}	
+	InputReader theInputReader = new InputReader();
+	
+	while(true) {
+		//Game logic
+	}
+}
+
 }
