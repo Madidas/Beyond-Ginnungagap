@@ -4,7 +4,10 @@ import java.util.HashMap;
 
 public class Room {
 	
-	//Will this work now
+	private static Inventory roomInventory;
+	
+	public Room(Inventory roomInventory) {
+		Room.roomInventory = roomInventory;
 
 	class TrapRoom extends Room {
 		
@@ -19,16 +22,8 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
-		private static Inventory testroomInventory;
-		
-		public TestRoom(Inventory testroomInventory) {
-			TestRoom.testroomInventory = testroomInventory;
-		}
-		testroom
-		
-		System.out.println("You're in TestRoom");
-		System.out.println("Room's inventory:");
-		
-		
+	
 	}
+}
+
 }

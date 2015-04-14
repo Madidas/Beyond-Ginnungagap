@@ -1,3 +1,6 @@
 Text based game project
 
-Do for school purposes.
+Made by
+  *Christofer
+  *Joona
+  *Matias
