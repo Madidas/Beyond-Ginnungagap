@@ -5,10 +5,11 @@ import java.util.HashMap;
 
 public class Room {
 	
-	private static Inventory roomInventory;
+	private static Item roomItem;
 	
-	public Room(Inventory roomInventory) {
-		Room.roomInventory = roomInventory;
+	public Room(Item roomItem) {
+		Room.roomItem = roomItem;
+	}
 
 	class TrapRoom extends Room {
 		
@@ -23,9 +24,13 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
-		ArrayList<Item> testroomInventory = new roomInventory;
+		HashMap<Action, Item> testroomActions = new HashMap<Action, Item>;
+		testroomActions.put("eat","CanOfBeans");
+		
+		ArrayList<Item> testroomItems = new ArrayList<Item>;
 		testroomInventory.add(CanOfBeans);
+		
+		System.out.println(testroomItems);
 	}
-}
 
 }
