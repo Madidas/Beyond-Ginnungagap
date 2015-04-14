@@ -25,7 +25,7 @@ public class Item {
 		public void eat();
 	}
 	
-	public class CanOfBeans extends Item implements IsEdible {
+	public class CanOfBeans extends Item implements Edible {
 		itemName = "Can of beans";
 		itemDescription = "A can of beans";
 		
@@ -35,6 +35,5 @@ public class Item {
 	}
 	
 	public class EmptyCanOfBeans extends Item {
-	}		
-	
+	}			
 }
