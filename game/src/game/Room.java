@@ -23,7 +23,7 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
-		ArrayList<Item> testroomInventory = new ArrayList<Item>();
+		ArrayList<Item> testroomInventory = new roomInventory;
 		testroomInventory.add(CanOfBeans);
 	}
 }
