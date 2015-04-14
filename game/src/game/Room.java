@@ -1,5 +1,6 @@
 package game;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Room {
@@ -22,7 +23,8 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
-	
+		ArrayList<Item> testroomInventory = new ArrayList<Item>();
+		testroomInventory.add(CanOfBeans);
 	}
 }
 
