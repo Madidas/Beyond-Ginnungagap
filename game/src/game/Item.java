@@ -8,20 +8,20 @@ public class Item {
 	
 	ArrayList<String> itemProperties = new ArrayList<String>();
 	
-	public interface IsIdentifiable {
+	public interface Identifiable {
 		public void identify(String itemName);
 	}
 	
-	public interface IsUsable {
+	public interface Usable {
 	}
 	
-	public interface IsReadable {
+	public interface Readable {
 	}
 	
-	public interface IsThrowable {
+	public interface Throwable {
 	}
 	
-	public interface IsEdible {
+	public interface Edible {
 		public void eat();
 	}
 	
