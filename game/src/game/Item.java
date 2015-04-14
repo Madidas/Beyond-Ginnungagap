@@ -26,8 +26,11 @@ public class Item {
 	}
 	
 	public class CanOfBeans extends Item implements IsEdible {
-		public void eat(){
-		eat();	
+		itemName = "Can of beans";
+		itemDescription = "A can of beans";
+		
+		public void eat() {
+			System.out.println("Eating " + itemName);
 		}
 	}
 	
