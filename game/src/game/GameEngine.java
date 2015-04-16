@@ -4,7 +4,6 @@ public class GameEngine {
 
 	//InputReader theInputReader = new InputReader(); //Here game controller
 	
-	//Player thePlayer = new Player();
 	//Room theTestRoom = new TestRoom();
 	
 	//private static InputReader geInputReader;
