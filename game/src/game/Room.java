@@ -24,6 +24,10 @@ public class Room {
 	}
 	
 	class TestRoom extends Room {
+		public TestRoom(Item roomItem) {
+			super(roomItem);
+		}
+		
 		HashMap<Action, Item> testroomActions = new HashMap<Action, Item>;
 		testroomActions.put("eat","CanOfBeans");
 		
