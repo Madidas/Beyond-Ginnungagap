@@ -8,7 +8,8 @@ public class GameEngine {
 	Room theTestRoom = new TestRoom();
 	
 	while(true) {
-		
+		if (thePlayer.playerLocation == 1){
+			
 	}
 }
 

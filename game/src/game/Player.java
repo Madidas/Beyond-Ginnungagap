@@ -14,6 +14,7 @@ public class Player  {
 	}
 	
 	private class PlayerLocation {
+		int playerLocation = 1;
 		
 	}
 }
