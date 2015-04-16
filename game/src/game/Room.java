@@ -5,12 +5,16 @@ import java.util.HashMap;
 
 public class Room {
 	
-	private static Item roomItem;
+	private Item roomItem;
 	
-	public Room(Item roomItem) {
-		Room.roomItem = roomItem;
+	public Room (Item roomItem) {
+		this.roomItem = roomItem;
 	}
-
+	
+	public Room() {
+		
+	}
+/*
 	class TrapRoom extends Room {
 		
 	}
@@ -22,18 +26,13 @@ public class Room {
 	class ObstacleRoom extends Room {
 		
 	}
-	
-	class TestRoom extends Room {
-		public TestRoom(Item roomItem) {
-			super(roomItem);
+*/	
+	static class TestRoom extends Room {
+		
+		public static void setRoomItems() {
+			ArrayList<Item> testroomItems = new ArrayList<Item>();
+			//testroomItems.add(Item.CanOfBeans);
+			System.out.println("Items in the room: " + testroomItems);
 		}
-		
-		HashMap<Action, Item> testroomActions = new HashMap<Action, Item>;
-		testroomActions.put("eat","CanOfBeans");
-		
-		ArrayList<Item> testroomItems = new ArrayList<Item>;
-		testroomInventory.add(CanOfBeans);
-		
-		System.out.println(testroomItems);
 	}
 }

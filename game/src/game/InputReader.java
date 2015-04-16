@@ -4,9 +4,9 @@ import java.util.*;
 
 public class InputReader {
 	
-	Scanner playerInput = new Scanner(System.in);
+	static Scanner playerInput = new Scanner(System.in);
 	
-	public String getPlayerInput() {
+	public static String getPlayerInput() {
 		System.out.println("Type something:");
 		String inputLine = playerInput.nextLine();
 		inputLine.toLowerCase();
