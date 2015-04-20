@@ -2,6 +2,8 @@ package game;
 
 public class Menu {
 	
+	private static boolean b;
+
 	public static void mainMenu() {
 		InputReader theInputReader = new InputReader();
 		
@@ -18,7 +20,7 @@ public class Menu {
 				return;
 			}
 			case "3": {
-				return;
+				System.exit(0);
 			}
 	}
 }
