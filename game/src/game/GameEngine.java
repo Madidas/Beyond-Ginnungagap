@@ -6,7 +6,7 @@ public class GameEngine {
 	
 	//Room theTestRoom = new TestRoom();
 	
-	//private static InputReader geInputReader;
+	//private static InputReader getInputReader;
 	
 	public void startGame() {
 		System.out.println("You will be moved to the test room");

@@ -1,5 +1,7 @@
 package game;
 
+import game.Item.CanOfBeans;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -30,8 +32,8 @@ public class Room {
 	static class TestRoom extends Room {
 		
 		public static void setRoomItems() {
-			ArrayList<Item> testroomItems = new ArrayList<Item>();
-			//testroomItems.add(Item.CanOfBeans);
+			ArrayList<String> testroomItems = new ArrayList<String>();
+			testroomItems.add(CanOfBeans.getValues());
 			System.out.println("Items in the room: " + testroomItems);
 		}
 	}

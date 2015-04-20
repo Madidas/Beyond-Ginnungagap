@@ -3,13 +3,17 @@ package game;
 import java.util.ArrayList;
 
 public class Item {
-	private static String itemName = "Name";
-	private static String itemDescription = "Description";
+	private static String itemName = "Items name";
+	private static String itemDescription = "Items description";
 	
-	ArrayList<String> itemProperties = new ArrayList<String>();
+	//ArrayList<String> itemProperties = new ArrayList<String>();
 	
 	public interface Identifiable {
 		public void identify(String itemName);
+	}
+	
+	public static String getValues() {
+		return itemName;
 	}
 /*	
 	public interface Usable {
@@ -25,24 +29,18 @@ public class Item {
 		public void eat();
 	}
 	
-	public static class CanOfBeans extends Item implements Edible {
+	public static class CanOfBeans extends Item {
 		
 		private static String itemName = "Can of beans";
 		private static String itemDescription = "A tasty can of beans";
-		
-		public static String getValues() {
-			return itemName;
-		}
 		
 		public void eat() {
 			System.out.println("Eating " + itemName);
 		}
 		
-		public void identify() {
+		public void identify(String itemName) {
 			System.out.println("Identifying: " + itemDescription);
-		}
+		}		
 	}
-	
-	public class EmptyCanOfBeans extends Item {
-	}			
 }
+
