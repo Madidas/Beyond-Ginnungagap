@@ -33,7 +33,6 @@ public class Room implements Serializable {
 		//Assign title and description to the room
 		m_roomName = title;
 		m_roomInfo = description;
-		
 		//Blank exits
 		vecExits = new Vector();
 	}
@@ -53,23 +52,6 @@ public class Room implements Serializable {
 			vecExits.removeElement(exit);
 		}
 	}
-import java.util.ArrayList;
-
-public class Room {
-import java.util.ArrayList;
-
-public class Room {
-import java.util.ArrayList;
-
-public class Room {
-import java.util.ArrayList;
-
-public class Room {
-import java.util.ArrayList;
-
-
-public class Room {
-	
 	//Return a vector of exits
 	public Vector getExits() {
 		//Return clone so not to modify original
@@ -90,7 +72,12 @@ public class Room {
 	//Assign room info
 	public void setInfo(String roomInfo) {
 		m_roomInfo = roomInfo;
+		}
 	}
+
+public class Room {
+	
+	
 	private Item roomItem;
 	
 	public Room (Item roomItem) {
