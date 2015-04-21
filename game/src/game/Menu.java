@@ -17,9 +17,10 @@ public class Menu {
 				ge.startGame();
 			}
 			case "2": {
-				return;
+				continue;
 			}
 			case "3": {
+				System.out.println("Goodbey... You tiny Heathen.");
 				System.exit(0);
 			}
 	}
