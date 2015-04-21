@@ -2,8 +2,6 @@ package game;
 
 import java.util.*;
 import java.io.*;
-import game.Item.CanOfBeans;
-
 public class Room implements Serializable {
 	
 	//Room info
@@ -55,6 +53,26 @@ public class Room implements Serializable {
 			vecExits.removeElement(exit);
 		}
 	}
+import java.util.ArrayList;
+//import java.util.HashMap;
+
+public class Room {
+import java.util.ArrayList;
+//import java.util.HashMap;
+
+public class Room {
+import java.util.ArrayList;
+//import java.util.HashMap;
+
+public class Room {
+import java.util.ArrayList;
+//import java.util.HashMap;
+
+public class Room {
+import java.util.ArrayList;
+//import java.util.HashMap;
+
+public class Room {
 	
 	//Return a vector of exits
 	public Vector getExits() {
@@ -98,12 +116,33 @@ public class Room implements Serializable {
 */	
 	static class TestRoom extends Room {
 		
-		static Item testroomBeans(String itemName) = new Item.CanOfBeans(String itemName);
+		public static Item testroomCanOfBeans = new Item.CanOfBeans();
 		
 		public static void setRoomItems() {
 			ArrayList<Item> testroomItems = new ArrayList<Item>();
-			testroomItems.add(testroomBeans);
-			System.out.println("Items in the room: " + testroomItems);
+			testroomItems.add(testroomCanOfBeans);
+			System.out.println("Items in the room: " + testroomCanOfBeans.getItemName());
+			testroomCanOfBeans.eat();
+			testroomCanOfBeans.identify("Can Of Beans");
+		}
+	}uzzleRoom extends Room {
+		
+	}
+	
+	class ObstacleRoom extends Room {
+		
+	}
+*/	
+	static class TestRoom extends Room {
+		
+		public static Item testroomCanOfBeans = new Item.CanOfBeans();
+		
+		public static void setRoomItems() {
+			ArrayList<Item> testroomItems = new ArrayList<Item>();
+			testroomItems.add(testroomCanOfBeans);
+			System.out.println("Items in the room: " + testroomCanOfBeans.getItemName());
+			testroomCanOfBeans.eat();
+			testroomCanOfBeans.identify("Can Of Beans");
 		}
 	}
 }

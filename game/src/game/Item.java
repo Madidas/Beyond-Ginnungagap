@@ -3,18 +3,27 @@ package game;
 import java.util.ArrayList;
 
 public class Item {
-	private static String itemName = "Item's name";
-	private static String itemDescription = "Item's description";
+	private static String itemName = "Item name";
+	private static String itemDescription = "Item description";
+	ArrayList<String> itemProperties = new ArrayList<String>();
 	
-	//ArrayList<String> itemProperties = new ArrayList<String>();
+	public String getItemName() {
+		return itemName;
+	}
+	
+	public void eat() {
+		System.out.println("Eating " + itemName);
+	}
+	
+	public void identify(String itemName) {
+		System.out.println("Identifying " + itemName);
+		System.out.println(itemName + " looks like " + itemDescription);
+	}	
 	
 	public interface Identifiable {
 		public void identify(String itemName);
 	}
 	
-	//public static String getValues() {
-		//return itemName;
-	//}
 /*	
 	public interface Usable {
 	}
@@ -29,29 +38,26 @@ public class Item {
 		public void eat();
 	}
 	
-	public static class CanOfBeans extends Item {
+	public static class CanOfBeans extends Item implements Identifiable, Edible {
 		
 		private String itemName;
 		private String itemDescription;
 
-		public CanOfBeans(String itemName) {
+		public CanOfBeans() {
 			this.itemName = "Can of beans";
 			this.itemDescription  = "A tasty can of beans";
 		}
 		
 		public String getItemName() {
-			return itemName;
+			return this.itemName;
 		}
 		
-		/*
 		public void eat() {
-			System.out.println("Eating " + itemName);
+			System.out.println("Eating " + this.itemName);
 		}
-		
 		public void identify(String itemName) {
-			System.out.println("Identifying: " + itemDescription);
-		}
-		*/		
+			System.out.println("Identifying " + this.itemName);
+			System.out.println(itemName + " looks like " + this.itemDescription);
+		}	
 	}
 }
-
