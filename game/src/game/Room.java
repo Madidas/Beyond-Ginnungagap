@@ -73,10 +73,6 @@ public class Room implements Serializable {
 	public void setInfo(String roomInfo) {
 		m_roomInfo = roomInfo;
 		}
-	}
-
-public class Room {
-	
 	
 	private Item roomItem;
 	
