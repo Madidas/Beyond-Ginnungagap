@@ -3,8 +3,8 @@ package game;
 import java.util.ArrayList;
 
 public class Item {
-	private static String itemName = "Items name";
-	private static String itemDescription = "Items description";
+	private static String itemName = "Item's name";
+	private static String itemDescription = "Item's description";
 	
 	//ArrayList<String> itemProperties = new ArrayList<String>();
 	
@@ -12,9 +12,9 @@ public class Item {
 		public void identify(String itemName);
 	}
 	
-	public static String getValues() {
-		return itemName;
-	}
+	//public static String getValues() {
+		//return itemName;
+	//}
 /*	
 	public interface Usable {
 	}
@@ -31,16 +31,27 @@ public class Item {
 	
 	public static class CanOfBeans extends Item {
 		
-		private static String itemName = "Can of beans";
-		private static String itemDescription = "A tasty can of beans";
+		private String itemName;
+		private String itemDescription;
+
+		public CanOfBeans(String itemName) {
+			this.itemName = "Can of beans";
+			this.itemDescription  = "A tasty can of beans";
+		}
 		
+		public String getItemName() {
+			return itemName;
+		}
+		
+		/*
 		public void eat() {
 			System.out.println("Eating " + itemName);
 		}
 		
 		public void identify(String itemName) {
 			System.out.println("Identifying: " + itemDescription);
-		}		
+		}
+		*/		
 	}
 }
 

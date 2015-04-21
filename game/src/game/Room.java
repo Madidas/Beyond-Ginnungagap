@@ -98,9 +98,11 @@ public class Room implements Serializable {
 */	
 	static class TestRoom extends Room {
 		
+		static Item testroomBeans(String itemName) = new Item.CanOfBeans(String itemName);
+		
 		public static void setRoomItems() {
-			ArrayList<String> testroomItems = new ArrayList<String>();
-			testroomItems.add(CanOfBeans.getValues());
+			ArrayList<Item> testroomItems = new ArrayList<Item>();
+			testroomItems.add(testroomBeans);
 			System.out.println("Items in the room: " + testroomItems);
 		}
 	}
