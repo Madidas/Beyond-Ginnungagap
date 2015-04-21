@@ -72,15 +72,6 @@ public class Room implements Serializable {
 	//Assign room info
 	public void setInfo(String roomInfo) {
 		m_roomInfo = roomInfo;
-<<<<<<< Upstream, based on origin/master
-		}
-	
-	private Item roomItem;
-	
-	public Room (Item roomItem) {
-		this.roomItem = roomItem;
-=======
->>>>>>> 5c626e5 asd
 	}
 	
 /*
