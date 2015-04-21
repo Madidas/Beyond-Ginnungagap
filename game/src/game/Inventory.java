@@ -9,8 +9,17 @@ public class Inventory {
 		Inventory.inventoryItem = inventoryItem;
 	}
 	
-	public ArrayList<Item> getInventory(){
-		ArrayList<Item> itemInventory = new ArrayList<Item>();
-		return itemInventory;
+	public ArrayList<Item> setInventory(){
+		ArrayList<Item> inventoryItems = new ArrayList<Item>();
+		inventoryItems.add();
+		return inventoryItems;
+	}
+	
+	public addItem() {
+		
+	}
+	
+	public removeItem() {
+		
 	}
 }

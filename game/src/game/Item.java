@@ -58,6 +58,6 @@ public class Item {
 		public void identify(String itemName) {
 			System.out.println("Identifying " + this.itemName);
 			System.out.println(itemName + " looks like " + this.itemDescription);
-		}	
+		}
 	}
 }
