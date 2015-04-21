@@ -98,5 +98,9 @@ public class Room implements Serializable {
 			testroomCanOfBeans.eat();
 			testroomCanOfBeans.identify("Can Of Beans");
 		}
+		
+		public void removeRoomItem() {
+			testroomItems.remove(testroomCanOfBeans);
+		}
 	}
 }
