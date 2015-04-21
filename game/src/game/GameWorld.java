@@ -16,7 +16,7 @@ public class GameWorld implements Serializable
 	private Vector exits;
 
 	// The current location of the player
-	private Location currentLocation;
+	private Room currentLocation;
 
 	// Character width for descriptions
 	private int charWidth;
@@ -48,15 +48,15 @@ public class GameWorld implements Serializable
 	}
 
 	/** Returns the current location of the player */
-	public Location getCurrentLocation()
+	public Room getCurrentLocation()
 	{
 		return currentLocation;
 	}
 
 	/** Assigns a new location to the current location of the player */
-	public void setCurrentLocation(Location newLocation)
+	public void setCurrentLocation(Room newRoom)
 	{
-		currentLocation = newLocation;
+		currentLocation = newRoom;
 	}
 
 	/** Adds a new exit to the gaming system */
@@ -69,15 +69,15 @@ public class GameWorld implements Serializable
 	}
 
 	/** Adds a new location to the gaming system */
-	public void addLocation( Location location )
+	public void addRoom( Room location )
 	{
 		// Check if location vector already contains location 
 		if (! locations.contains ( location ) )
 			// Location doesn't exist, and must be added
-			locations.addElement ( location );
+			locations.addElement( location );
 	}
 
-	/** Sets the output stream for the gaming systewm */
+	/** Sets the output stream for the gaming system */
 	public void setOutputStream(OutputStream out, int width)
 	{
 		output = new WidthLimitedOutputStream(out, width) ;
@@ -87,10 +87,10 @@ public class GameWorld implements Serializable
 	public void showLocation()
 	{
 		// Show title
-		output.println ( currentLocation.getTitle() );
+		output.println ( currentLocation.getName() );
 
 		// Show description
-		output.println ( currentLocation.getDescription() );
+		output.println ( currentLocation.getInfo() );
 
 		output.println();
 
