@@ -102,5 +102,9 @@ public class Room implements Serializable {
 		public void removeRoomItem() {
 			testroomItems.remove(testroomCanOfBeans);
 		}
+		
+		public void addRoomItem() {
+			
+		}
 	}
 }

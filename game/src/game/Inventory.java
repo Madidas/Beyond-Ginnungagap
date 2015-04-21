@@ -11,7 +11,7 @@ public class Inventory {
 	
 	public ArrayList<Item> setInventory(){
 		ArrayList<Item> inventoryItems = new ArrayList<Item>();
-		inventoryItems.add();
+		inventoryItems.add(Item.CanOfBeans);
 		return inventoryItems;
 	}
 	

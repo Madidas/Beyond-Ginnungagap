@@ -43,7 +43,7 @@ public class Item {
 		private String itemName;
 		private String itemDescription;
 
-		public CanOfBeans() {
+		public CanOfBeans(String itemName, String itemDescription) {
 			this.itemName = "Can of beans";
 			this.itemDescription  = "A tasty can of beans";
 		}
