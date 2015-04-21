@@ -125,24 +125,5 @@ public class Room {
 			testroomCanOfBeans.eat();
 			testroomCanOfBeans.identify("Can Of Beans");
 		}
-	}uzzleRoom extends Room {
-		
-	}
-	
-	class ObstacleRoom extends Room {
-		
-	}
-*/	
-	static class TestRoom extends Room {
-		
-		public static Item testroomCanOfBeans = new Item.CanOfBeans();
-		
-		public static void setRoomItems() {
-			ArrayList<Item> testroomItems = new ArrayList<Item>();
-			testroomItems.add(testroomCanOfBeans);
-			System.out.println("Items in the room: " + testroomCanOfBeans.getItemName());
-			testroomCanOfBeans.eat();
-			testroomCanOfBeans.identify("Can Of Beans");
-		}
 	}
 }
