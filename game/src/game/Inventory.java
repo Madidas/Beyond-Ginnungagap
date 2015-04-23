@@ -3,23 +3,21 @@ package game;
 import java.util.ArrayList;
 
 public class Inventory {
-	private static Item inventoryItem;
+	//public static Item testroomCanOfBeans = new Item.CanOfBeans();
 	
-	public Inventory(Item inventoryItem){
-		Inventory.inventoryItem = inventoryItem;
-	}
-	
-	public ArrayList<Item> setInventory(){
+	public static void setInventoryItems() {
 		ArrayList<Item> inventoryItems = new ArrayList<Item>();
-		inventoryItems.add(Item.CanOfBeans);
-		return inventoryItems;
+		inventoryItems.add(testroomCanOfBeans);
+		System.out.println("Items in the room: " + .getItemName());
+		.eat();
+		.identify();
 	}
 	
-	public addItem() {
+	public void removeRoomItem() {
 		
 	}
 	
-	public removeItem() {
+	public void addRoomItem() {
 		
 	}
 }

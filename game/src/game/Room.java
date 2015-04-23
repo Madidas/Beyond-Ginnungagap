@@ -89,7 +89,7 @@ public class Room implements Serializable {
 	}
 */	
 	static class TestRoom extends Room {
-		
+		/*
 		public static Item testroomCanOfBeans = new Item.CanOfBeans();
 		
 		public static void setRoomItems() {
@@ -106,6 +106,6 @@ public class Room implements Serializable {
 		
 		public void addRoomItem() {
 			
-		}
+		}*/
 	}
 }

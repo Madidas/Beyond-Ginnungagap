@@ -11,18 +11,9 @@ public class Item {
 		return itemName;
 	}
 	
-	public void eat() {
-		System.out.println("Eating " + itemName);
-	}
-	
-	public void identify(String itemName) {
-		System.out.println("Identifying " + itemName);
-		System.out.println(itemName + " looks like " + itemDescription);
-	}	
-	
 	public interface Identifiable {
-		public void identify(String itemName);
-	}
+		public void identify();
+	}	
 	
 /*	
 	public interface Usable {
@@ -43,7 +34,7 @@ public class Item {
 		private String itemName;
 		private String itemDescription;
 
-		public CanOfBeans(String itemName, String itemDescription) {
+		public CanOfBeans() {
 			this.itemName = "Can of beans";
 			this.itemDescription  = "A tasty can of beans";
 		}
@@ -55,9 +46,19 @@ public class Item {
 		public void eat() {
 			System.out.println("Eating " + this.itemName);
 		}
-		public void identify(String itemName) {
+		public void identify() {
 			System.out.println("Identifying " + this.itemName);
 			System.out.println(itemName + " looks like " + this.itemDescription);
 		}
+	}
+
+	public void eat() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void identify() {
+		// TODO Auto-generated method stub
+		
 	}
 }

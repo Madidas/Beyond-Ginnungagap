@@ -21,6 +21,6 @@ public class GameEngine {
 	}
 	
 	public void getRoom() {
-		Room.TestRoom.setRoomItems();
+		TestRoom.setRoomItems();
 	}
 }
