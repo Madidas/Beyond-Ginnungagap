@@ -2,6 +2,7 @@ package game;
 
 import java.util.*;
 import java.io.*;
+
 public class Room implements Serializable {
 	
 	//Room info
@@ -62,8 +63,8 @@ public class Room implements Serializable {
 		return m_roomName;
 	}
 	//Assigns room name
-	public void setName(String roomName) {
-		m_roomName = roomName; 
+	public void setName(String Name) {
+		m_roomName = Name; 
 	}
 	//Return room info
 	public String getInfo() {
