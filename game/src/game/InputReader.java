@@ -9,7 +9,9 @@ public class InputReader {
 	public static String getPlayerInput() {
 		System.out.println("Type something:");
 		String inputLine = playerInput.nextLine();
-		inputLine.toLowerCase();
+		//System.out.println(inputLine);
+		inputLine = inputLine.toUpperCase();
+		//System.out.println(inputLine);
 		return inputLine;
 	}
 }

@@ -10,10 +10,10 @@ import java.io.*;
 public class GameWorld implements Serializable
 {
 	// List of Location objects
-	private Vector locations;
+	private Vector<Room> locations;
 
 	// List of Exit objects
-	private Vector exits;
+	private Vector<Exit> exits;
 
 	// The current location of the player
 	private Room currentLocation;
@@ -28,8 +28,8 @@ public class GameWorld implements Serializable
 	public GameWorld()
 	{
 		// Instantiate vector lists for location/exits
-		locations = new Vector();
-		exits = new Vector();
+		locations = new Vector<Room>();
+		exits = new Vector<Exit>();
 
 		// The default location of a player isn't known
 		currentLocation = null;
@@ -98,7 +98,7 @@ public class GameWorld implements Serializable
 		output.println ( "Available exits :" );
 
 		// Traverse elements of vector
-		for (Enumeration e = currentLocation.getExits().elements(); e.hasMoreElements();)
+		for (Enumeration<?> e = currentLocation.getExits().elements(); e.hasMoreElements();)
 		{
 			// Get next exit
 			Exit an_exit = (Exit) e.nextElement();

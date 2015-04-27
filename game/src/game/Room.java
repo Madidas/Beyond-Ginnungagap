@@ -6,24 +6,24 @@ import java.io.*;
 public class Room implements Serializable {
 	
 	//Room info
-	private String m_roomName;
-	private String m_roomInfo;
+	private String nameRoom;
+	private String infoRoom;
 	private Vector vecExits;
 	
 	//Blank constructor
 	public Room() {
-		m_roomName = new String();
-		m_roomInfo = new String();
+		nameRoom = new String();
+		infoRoom = new String();
 		vecExits = new Vector();
 	}
 	
 	//Partial constructor
 	public Room(String title) {
 		//Assign title
-		m_roomName = title;
+		nameRoom = title;
 		
 		//Blank description
-		m_roomInfo = new String();
+		infoRoom = new String();
 		
 		//Blank exits
 		vecExits = new Vector();
@@ -32,15 +32,15 @@ public class Room implements Serializable {
 	//Full constructor
 	public Room(String title, String description) {
 		//Assign title and description to the room
-		m_roomName = title;
-		m_roomInfo = description;
+		nameRoom = title;
+		infoRoom = description;
 		//Blank exits
 		vecExits = new Vector();
 	}
 	
 	//toString method
 	public String toString() {
-		return m_roomName;
+		return nameRoom;
 	}
 	
 	//Add exits to this location
@@ -60,19 +60,19 @@ public class Room implements Serializable {
 	}
 	//Return room name
 	public String getName() {
-		return m_roomName;
+		return nameRoom;
 	}
 	//Assigns room name
 	public void setName(String Name) {
-		m_roomName = Name; 
+		nameRoom = Name; 
 	}
 	//Return room info
 	public String getInfo() {
-		return m_roomInfo;
+		return infoRoom;
 	}
 	//Assign room info
 	public void setInfo(String roomInfo) {
-		m_roomInfo = roomInfo;
+		infoRoom = roomInfo;
 	}
 	
 /*

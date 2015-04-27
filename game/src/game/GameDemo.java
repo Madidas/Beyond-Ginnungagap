@@ -39,7 +39,7 @@ class GameDemo
 		new GameDemo().play();
 	}
 
-	public void play()
+	public void play() throws IOException
 	{
 		String command = null;
 		boolean validCommand = false;
@@ -52,17 +52,10 @@ class GameDemo
 			// Show location
 			game.showLocation();
 
-			// Get user input
-			try
-			{
-				command = din.readLine();
-				
-				// Print a new line
-				System.out.println();
-			}
-			catch (IOException e)
-			{
-			}
+			command = InputReader.getPlayerInput();
+						
+			// Print a new line
+			System.out.println();
 
 			// By default, we haven't found a valid command
 			validCommand = false;
@@ -74,9 +67,7 @@ class GameDemo
 				continue;
 			}
 
-			// Convert to uppercase for comparison
-			command = command.toUpperCase();
-
+			
 			// Search for an exit match
 			for (Enumeration e = game.getCurrentLocation().getExits().elements(); e.hasMoreElements();)
 			{
@@ -103,7 +94,26 @@ class GameDemo
 				System.out.println ("Okay. Bye!");
 				System.exit(0);
 			}
+			
+			// Time to save this stuff
+			if (command.compareTo( "SAVE" ) == 0)
+			{
+				System.out.println ("Time to save and exit...");
+				
+				// Create a file to write game system
+				FileOutputStream out = new FileOutputStream (filename);
 
+				// Create an object output stream, linked to out
+				ObjectOutputStream objectOut = new ObjectOutputStream (out);
+
+				// Write game system to object store
+				objectOut.writeObject (game);
+
+				// Close object output stream
+				objectOut.close();
+				System.exit(0);
+			}
+			
 			// If no valid commands, warn the user is invalid
 			if (!validCommand)
 			{
