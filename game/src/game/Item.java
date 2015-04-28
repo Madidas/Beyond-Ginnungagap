@@ -59,6 +59,7 @@ public class Item {
 		public void eat() {
 			System.out.println("Eating " + this.itemName);
 		}
+		
 		public void identify() {
 			System.out.println("Identifying " + this.itemName);
 			System.out.println(itemName + " looks like " + this.itemDescription);

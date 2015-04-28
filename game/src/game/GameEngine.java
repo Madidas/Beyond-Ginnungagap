@@ -1,7 +1,5 @@
 package game;
 
-import java.util.ArrayList;
-
 public class GameEngine {
 
 	//InputReader theInputReader = new InputReader(); //Here game controller
@@ -14,7 +12,9 @@ public class GameEngine {
 		System.out.println("You will be moved to the test room");
 		//getInput();
 		//getRoom();
-		testInventory();
+		geInventory.setInventoryItems();
+		geInventory.addInventoryItem();
+		geInventory.removeInventoryItem();
 	}
 	
 	public void getInput() {
@@ -26,4 +26,6 @@ public class GameEngine {
 	public void getRoom() {
 		TestRoom.setRoomItems();
 	}
+	
+	Inventory geInventory = new Inventory();
 }
