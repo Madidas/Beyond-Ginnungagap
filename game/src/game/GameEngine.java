@@ -26,10 +26,4 @@ public class GameEngine {
 	public void getRoom() {
 		TestRoom.setRoomItems();
 	}
-	
-	public void testInventory() {
-		Inventory.setInventoryItems();
-		Inventory.addInventoryItem();
-		Inventory.removeInventoryItem();
-	}
 }

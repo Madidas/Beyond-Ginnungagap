@@ -3,12 +3,25 @@ package game;
 import java.util.ArrayList;
 
 public class Item {
-	private static String itemName = "Item name";
-	private static String itemDescription = "Item description";
+	private String itemName = "Item name";
+	private String itemDescription = "Item description";
 	ArrayList<String> itemProperties = new ArrayList<String>();
 	
 	public String getItemName() {
-		return itemName;
+		return this.itemName;
+	}
+	
+	public String getItemDescription() {
+		return this.itemDescription;
+	}
+	
+
+	public void eat() {
+		System.out.println("Eating " + this.itemName);	
+	}
+
+	public void identify() {
+		
 	}
 	
 	public interface Identifiable {
@@ -29,7 +42,7 @@ public class Item {
 		public void eat();
 	}
 	
-	public static class CanOfBeans extends Item implements Identifiable, Edible {
+	public class CanOfBeans extends Item implements Identifiable, Edible {
 		
 		private String itemName;
 		private String itemDescription;
@@ -50,15 +63,5 @@ public class Item {
 			System.out.println("Identifying " + this.itemName);
 			System.out.println(itemName + " looks like " + this.itemDescription);
 		}
-	}
-
-	public void eat() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void identify() {
-		// TODO Auto-generated method stub
-		
 	}
 }
