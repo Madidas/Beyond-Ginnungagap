@@ -11,21 +11,31 @@ public class Inventory {
 	
 	public void setInventoryItems() {		
 		inventoryItems.put("Can Of Beans",inventoryCanOfBeans);
-		System.out.println("Items in the room: " + inventoryCanOfBeans.getItemName());
-		inventoryCanOfBeans.eat();
-		inventoryCanOfBeans.identify();
+		System.out.println("Items currently in inventory:");
+		
+		for (String name: inventoryItems.keySet()) {
+			System.out.println(name);
+		}
 	}
 	
 	public void removeInventoryItem() {
 		System.out.println("Removing " + inventoryCanOfBeans.getItemName() + " from inventory.");
-		inventoryItems.remove(inventoryCanOfBeans);
-		System.out.println(inventoryItems);
+		inventoryItems.remove(inventoryCanOfBeans);	
+		System.out.println("Items currently in inventory:");
+		
+		for (String name: inventoryItems.keySet()) {
+			System.out.println(name);
+		}
 	}
 	
 	public void addInventoryItem() {
 		System.out.println("Adding " + inventoryCanOfBeans.getItemName() + " to inventory.");	
-		inventoryItems.put("Can Of Beans",inventoryCanOfBeans);
-		System.out.println(inventoryItems);
+		inventoryItems.put("Can Of Beans",inventoryCanOfBeans);	
+		System.out.println("Items currently in inventory:");
+		
+		for (String name: inventoryItems.keySet()) {
+			System.out.println(name);
+		}
 	}
 	
 	public HashMap<String,Item> getInventory() {
