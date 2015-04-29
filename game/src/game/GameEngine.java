@@ -9,9 +9,7 @@ public class GameEngine {
 	//private static InputReader getInputReader;
 	
 	public void startGame() {
-		System.out.println("You will be moved to the test room");
-		//getInput();
-		//getRoom();
+		//System.out.println("You will be moved to the test room");
 		geInventory.setInventoryItems();
 		geInventory.addInventoryItem();
 		geInventory.removeInventoryItem();

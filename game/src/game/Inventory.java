@@ -18,9 +18,9 @@ public class Inventory {
 		}
 	}
 	
-	public void removeInventoryItem() {
-		System.out.println("Removing " + inventoryCanOfBeans.getItemName() + " from inventory.");
-		inventoryItems.remove(inventoryCanOfBeans);	
+	public void addInventoryItem() {
+		System.out.println("Adding " + inventoryCanOfBeans.getItemName() + " to inventory.");	
+		inventoryItems.put("Can Of Beans",inventoryCanOfBeans);	
 		System.out.println("Items currently in inventory:");
 		
 		for (String name: inventoryItems.keySet()) {
@@ -28,9 +28,9 @@ public class Inventory {
 		}
 	}
 	
-	public void addInventoryItem() {
-		System.out.println("Adding " + inventoryCanOfBeans.getItemName() + " to inventory.");	
-		inventoryItems.put("Can Of Beans",inventoryCanOfBeans);	
+	public void removeInventoryItem() {
+		System.out.println("Removing " + inventoryCanOfBeans.getItemName() + " from inventory.");
+		inventoryItems.remove("Can Of Beans");	
 		System.out.println("Items currently in inventory:");
 		
 		for (String name: inventoryItems.keySet()) {
