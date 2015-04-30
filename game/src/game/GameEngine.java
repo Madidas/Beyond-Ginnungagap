@@ -14,6 +14,7 @@ public class GameEngine {
 		printTestRoomItems();
 		takeItem();
 		printInventory();
+		identifyItem();
 	}
 	
 	public void getInput() {
@@ -42,8 +43,13 @@ public class GameEngine {
 	}
 	
 	public void takeItem() {
+		
 		System.out.println("Taking item from room. ");
 		geTestRoom.testroomItems.remove("Can Of Beans");
 		geInventory.inventoryItems.put("Can Of Beans",geTestRoom.testroomCanOfBeans);
+	}
+	
+	public void identifyItem() {
+		System.out.println(geInventory.inventoryItems.get("Can Of Beans").getItemDescription());
 	}
 }

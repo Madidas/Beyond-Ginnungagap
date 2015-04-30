@@ -52,13 +52,12 @@ public class Item {
 			return this.itemName;
 		}
 		
-		public void eat() {
-			System.out.println("Eating " + this.itemName);
+		public String getItemDescription() {
+			return this.itemDescription;
 		}
 		
-		public void identify() {
-			System.out.println("Identifying " + this.itemName);
-			System.out.println(itemName + " looks like " + this.itemDescription);			
+		public void eat() {
+			System.out.println("Eating " + this.itemName);
 		}
 	}
 }
