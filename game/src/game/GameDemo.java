@@ -42,10 +42,6 @@ class GameDemo
 	public void play() throws IOException
 	{
 		String command = null;
-		boolean validCommand = false;
-
-		// Create a data input stream
-		DataInputStream din = new DataInputStream ( System.in );
 
 		for (;;)
 		{
@@ -66,9 +62,6 @@ class GameDemo
 					// Set location to the location pointed to by exit
 					game.setCurrentLocation( an_exit.getLeadsTo() );
 
-					// Valid command encountered
-					validCommand = true;
-
 					// No need to search exits anymore
 					break;
 				}
@@ -78,7 +71,7 @@ class GameDemo
 			if (command.compareTo( "QUIT" ) == 0)
 			{
 				System.out.println ("Okay. Bye!");
-				Break;
+				break;
 			}
 
 			// Time to save this stuff
@@ -99,15 +92,8 @@ class GameDemo
 				objectOut.close();
 
 				//Time to shut down
-				Break;
+				break;
 
-			}
-
-			// If no valid commands, warn the user is invalid
-			if (!validCommand)
-			{
-				System.out.println ("Huh? Invalid direction!");
-				System.out.println ();
 			}
 		}
 	}

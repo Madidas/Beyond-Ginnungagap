@@ -7,12 +7,15 @@ public class InputReader {
 	static Scanner playerInput = new Scanner(System.in);
 
 	public static String getPlayerInput() {
+
+		int x = 0;
+
 		do {
 			System.out.println("Type something:");
 			String inputLine = playerInput.nextLine();
 			//System.out.println(inputLine);
 			inputLine = inputLine.toUpperCase();
-			if (inputLine.length() !== 0) {
+			if (inputLine.length() != 0) {
 				x = 1;
 				System.out.println();
 				return inputLine;
@@ -20,5 +23,7 @@ public class InputReader {
 				System.out.println("Try again you failure.");
 			}
 		} while (x == 0);
+
+		return inputLine;
 	}
 }

@@ -44,7 +44,7 @@ public class GameWorld implements Serializable
 		// Call default constructor
 		this();
 
-		charWidth = characterWidth;		
+		charWidth = characterWidth;
 	}
 
 	/** Returns the current location of the player */
@@ -62,7 +62,7 @@ public class GameWorld implements Serializable
 	/** Adds a new exit to the gaming system */
 	public void addExit( Exit exit )
 	{
-		// Check if exit vector already contains exit 
+		// Check if exit vector already contains exit
 		if (! exits.contains ( exit ) )
 			// Exit doesn't exist, and must be added
 			exits.addElement ( exit);
@@ -71,7 +71,7 @@ public class GameWorld implements Serializable
 	/** Adds a new location to the gaming system */
 	public void addRoom( Room location )
 	{
-		// Check if location vector already contains location 
+		// Check if location vector already contains location
 		if (! locations.contains ( location ) )
 			// Location doesn't exist, and must be added
 			locations.addElement( location );
@@ -94,7 +94,7 @@ public class GameWorld implements Serializable
 
 		output.println();
 
-		// Show available exits		
+		// Show available exits
 		output.println ( "Available exits :" );
 
 		// Traverse elements of vector
@@ -105,8 +105,7 @@ public class GameWorld implements Serializable
 
 			// Print exit to our output stream
 			output.println (an_exit.toString());
-		}	
+		}
 	}
 
 }
-
