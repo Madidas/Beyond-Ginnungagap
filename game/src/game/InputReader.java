@@ -9,16 +9,16 @@ public class InputReader {
 	public static String getPlayerInput() {
 
 		int x = 0;
+		String inputLine;
 
 		do {
 			System.out.println("Type something:");
-			String inputLine = playerInput.nextLine();
+			inputLine = playerInput.nextLine();
 			//System.out.println(inputLine);
 			inputLine = inputLine.toUpperCase();
 			if (inputLine.length() != 0) {
 				x = 1;
 				System.out.println();
-				return inputLine;
 			} else {
 				System.out.println("Try again you failure.");
 			}

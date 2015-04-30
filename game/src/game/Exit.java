@@ -7,6 +7,10 @@ package game;
 //
 public class Exit implements java.io.Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	// Numerical codes
 	public static final int UNDEFINED = 0;
 	public static final int NORTH = 1;
