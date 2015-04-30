@@ -9,11 +9,6 @@ public class TestRoom {
 	
 	public void setRoomItems() {
 		testroomItems.put("Can Of Beans",testroomCanOfBeans);
-		System.out.println("Items currently in room: ");
-		
-		for (String name: testroomItems.keySet()) {
-			System.out.println(name);
-		}
 	}
 
 	public void addTestroomItem() {
