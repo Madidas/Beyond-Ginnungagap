@@ -4,45 +4,56 @@ import java.util.*;
 import java.io.*;
 
 public class Room implements Serializable {
-	
+
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	//Room info
 	private String nameRoom;
 	private String infoRoom;
-	private Vector vecExits;
-	
+	private Vector<Exit> vecExits;
+	private HashMap<String,Item> inventoryRoom;
+
 	//Blank constructor
 	public Room() {
 		nameRoom = new String();
 		infoRoom = new String();
-		vecExits = new Vector();
+		vecExits = new Vector<Exit>();
+		inventoryRoom = new HashMap<String, Item>();
 	}
-	
+
 	//Partial constructor
 	public Room(String title) {
 		//Assign title
 		nameRoom = title;
-		
+
 		//Blank description
 		infoRoom = new String();
-		
+
 		//Blank exits
-		vecExits = new Vector();
+		vecExits = new Vector<Exit>();
+
+		//Blank Hashmap
+		inventoryRoom = new HashMap<String, Item>();
 	}
-	
+
 	//Full constructor
 	public Room(String title, String description) {
 		//Assign title and description to the room
 		nameRoom = title;
 		infoRoom = description;
 		//Blank exits
-		vecExits = new Vector();
+		vecExits = new Vector<Exit>();
+		//Blank inventory
+		inventoryRoom = new HashMap<String, Item>();
 	}
-	
+
 	//toString method
 	public String toString() {
 		return nameRoom;
 	}
-	
+
 	//Add exits to this location
 	public void addExit (Exit exit) {
 		vecExits.addElement(exit);
@@ -54,9 +65,9 @@ public class Room implements Serializable {
 		}
 	}
 	//Return a vector of exits
-	public Vector getExits() {
+	public Vector<Exit> getExits() {
 		//Return clone so not to modify original
-		return (Vector)vecExits.clone();
+		return (Vector<Exit>)vecExits.clone();
 	}
 	//Return room name
 	public String getName() {
@@ -64,7 +75,7 @@ public class Room implements Serializable {
 	}
 	//Assigns room name
 	public void setName(String Name) {
-		nameRoom = Name; 
+		nameRoom = Name;
 	}
 	//Return room info
 	public String getInfo() {
@@ -74,24 +85,32 @@ public class Room implements Serializable {
 	public void setInfo(String roomInfo) {
 		infoRoom = roomInfo;
 	}
-	
+	//Add inventory to this room
+	public void addInventory (Inventory inventoryItems) {
+		inventoryRoom.putAll((Map<? extends String, ? extends Item>) inventoryItems);
+
 /*
 	class TrapRoom extends Room {
-		
+
 	}
-	
+
 	class PuzzleRoom extends Room {
-		
+
 	}
-	
+
 	class ObstacleRoom extends Room {
-		
+
 	}
-*/	
+*/
 	static class TestRoom extends Room {
+
+		/**
+		 *
+		 */
+		private static final long serialVersionUID = 1L;
 		/*
 		public static Item testroomCanOfBeans = new Item.CanOfBeans();
-		
+
 		public static void setRoomItems() {
 			ArrayList<Item> testroomItems = new ArrayList<Item>();
 			testroomItems.add(testroomCanOfBeans);
@@ -99,13 +118,13 @@ public class Room implements Serializable {
 			testroomCanOfBeans.eat();
 			testroomCanOfBeans.identify("Can Of Beans");
 		}
-		
+
 		public void removeRoomItem() {
 			testroomItems.remove(testroomCanOfBeans);
 		}
-		
+
 		public void addRoomItem() {
-			
+
 		}*/
 	}
 }

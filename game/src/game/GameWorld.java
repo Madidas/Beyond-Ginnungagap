@@ -9,6 +9,11 @@ import java.io.*;
 //
 public class GameWorld implements Serializable
 {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	// List of Location objects
 	private Vector<Room> locations;
 
