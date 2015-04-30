@@ -4,6 +4,7 @@ first year period Games.
 
 This game is total hacked up code.
 You should not take any help from this.
+This is just working somehow... It must be magic.
 
 Made by
    *Christofer Wiik
