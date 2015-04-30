@@ -11,7 +11,7 @@ import java.util.*;
 //
 // Last modification date : December 20, 1997
 //
-class GameDemo 
+class GameDemo
 {
 	private static final String filename = "gameworld.dat";
 
@@ -20,7 +20,7 @@ class GameDemo
 
 	// Game demo constructor
 	public GameDemo() throws Exception
-	{		
+	{
 		// Create a file input stream
 		FileInputStream fin = new FileInputStream(filename);
 
@@ -30,7 +30,7 @@ class GameDemo
 		// Read an object in from object store, and cast it to a GameWorld
 		game = (GameWorld) objectIn.readObject();
 
-		// Set the object stream to standard output		
+		// Set the object stream to standard output
 		game.setOutputStream ( System.out, 40 );
 	}
 
@@ -53,21 +53,7 @@ class GameDemo
 			game.showLocation();
 
 			command = InputReader.getPlayerInput();
-						
-			// Print a new line
-			System.out.println();
 
-			// By default, we haven't found a valid command
-			validCommand = false;
-
-			// Parse user input
-			if (command.length() == 0)
-			{
-				System.out.println ("Huh? Invalid command!");
-				continue;
-			}
-
-			
 			// Search for an exit match
 			for (Enumeration e = game.getCurrentLocation().getExits().elements(); e.hasMoreElements();)
 			{
@@ -85,21 +71,21 @@ class GameDemo
 
 					// No need to search exits anymore
 					break;
-				}				
+				}
 			}
 
 			// Check to see if user wants to quit
 			if (command.compareTo( "QUIT" ) == 0)
 			{
 				System.out.println ("Okay. Bye!");
-				System.exit(0);
+				Break;
 			}
-			
+
 			// Time to save this stuff
 			if (command.compareTo( "SAVE" ) == 0)
 			{
 				System.out.println ("Time to save and exit...");
-				
+
 				// Create a file to write game system
 				FileOutputStream out = new FileOutputStream (filename);
 
@@ -111,9 +97,12 @@ class GameDemo
 
 				// Close object output stream
 				objectOut.close();
-				System.exit(0);
+
+				//Time to shut down
+				Break;
+
 			}
-			
+
 			// If no valid commands, warn the user is invalid
 			if (!validCommand)
 			{
@@ -123,4 +112,3 @@ class GameDemo
 		}
 	}
 }
-
