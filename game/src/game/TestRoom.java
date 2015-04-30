@@ -1,23 +1,32 @@
 package game;
-
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class TestRoom {
-	public static Item testroomCanOfBeans = new Item.CanOfBeans();
+	Item testroomItem = new Item();
+
+	HashMap<String,Item> testroomItems = new HashMap<String,Item>();	
+	public Item testroomCanOfBeans = testroomItem.new CanOfBeans();
 	
-	public static void setRoomItems() {
-		ArrayList<Item> testroomItems = new ArrayList<Item>();
-		testroomItems.add(testroomCanOfBeans);
-		System.out.println("Items in the room: " + testroomCanOfBeans.getItemName());
-		testroomCanOfBeans.eat();
-		testroomCanOfBeans.identify();
-	}
-	
-	public void removeRoomItem() {
+	public void setRoomItems() {
+		testroomItems.put("Can Of Beans",testroomCanOfBeans);
+		System.out.println("Items currently in room: ");
 		
+		for (String name: testroomItems.keySet()) {
+			System.out.println(name);
+		}
 	}
-	
-	public void addRoomItem() {
-		
+
+	public void addTestroomItem() {
+		System.out.println("Adding " + testroomCanOfBeans.getItemName() + " to inventory.");	
+		testroomItems.put("Can Of Beans",testroomCanOfBeans);
+	}
+
+	public void removeTestroomItem() {
+		System.out.println("Removing " + testroomCanOfBeans.getItemName() + " from room.");	
+		testroomItems.remove("Can Of Beans");	
+	}
+
+	public HashMap<String,Item> getTestroomItems() {
+		return testroomItems;
 	}
 }

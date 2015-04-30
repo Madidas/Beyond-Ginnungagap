@@ -9,10 +9,12 @@ public class GameEngine {
 	//private static InputReader getInputReader;
 	
 	public void startGame() {
-		//System.out.println("You will be moved to the test room");
-		geInventory.setInventoryItems();
-		geInventory.addInventoryItem();
-		geInventory.removeInventoryItem();
+		printTestRoomItems();
+		printInventory();
+		geTestRoom.setRoomItems();
+		takeItem();
+		printInventory();
+		printTestRoomItems();
 	}
 	
 	public void getInput() {
@@ -21,9 +23,27 @@ public class GameEngine {
 		System.out.println(playerInput);
 	}
 	
-	public void getRoom() {
-		TestRoom.setRoomItems();
+	Inventory geInventory = new Inventory();
+	TestRoom geTestRoom = new TestRoom();
+	
+	public void takeItem() {
+		geTestRoom.removeTestroomItem();
+		geInventory.addInventoryItem();
 	}
 	
-	Inventory geInventory = new Inventory();
+	public void printInventory() {
+		System.out.println("Items currently in inventory:");
+		
+		for (String name: geInventory.inventoryItems.keySet()) {
+			System.out.println(name);
+		}
+	}
+	
+	public void printTestRoomItems() {
+		System.out.println("Items currently in room:");
+		
+		for (String name: geTestRoom.testroomItems.keySet()) {
+			System.out.println(name);
+		}
+	}
 }
