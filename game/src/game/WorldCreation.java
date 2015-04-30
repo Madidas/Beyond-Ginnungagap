@@ -23,7 +23,7 @@ public final class WorldCreation
 		Exit e2 = new Exit ( Exit.IN, bunk);
 		
 		// Adding exits to correct rooms
-		bunk.addExit ( e1 );
+		bunk.addExit (e1);
 		testroom.addExit(e2);
 	
 		// Add locations/exits to our game lists
