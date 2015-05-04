@@ -12,7 +12,7 @@ public class InputReader {
 		String inputLine;
 
 		do {
-			System.out.println("Type something:");
+			System.out.println("Text goes here->");
 			inputLine = playerInput.nextLine();
 			//System.out.println(inputLine);
 			inputLine = inputLine.toUpperCase();

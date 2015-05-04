@@ -106,6 +106,8 @@ public class GameWorld implements Serializable
 			// Print exit to our output stream
 			output.println (an_exit.toString());
 		}
+		
+		//Return value for current room
 	}
 
 }

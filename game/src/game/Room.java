@@ -7,6 +7,7 @@ public class Room implements Serializable {
 
 
 	//Room info
+	private Integer numberRoom;
 	private String nameRoom;
 	private String infoRoom;
 	private Vector<Exit> vecExits;
@@ -14,6 +15,7 @@ public class Room implements Serializable {
 
 	//Blank constructor
 	public Room() {
+		numberRoom = new Integer(numberRoom);
 		nameRoom = new String();
 		infoRoom = new String();
 		vecExits = new Vector<Exit>();
@@ -21,7 +23,10 @@ public class Room implements Serializable {
 	}
 
 	//Partial constructor
-	public Room(String title) {
+	public Room(Integer number, String title) {
+		//Assign number
+		numberRoom = number;
+		
 		//Assign title
 		nameRoom = title;
 
@@ -36,8 +41,9 @@ public class Room implements Serializable {
 	}
 
 	//Full constructor
-	public Room(String title, String description) {
-		//Assign title and description to the room
+	public Room(Integer number, String title, String description) {
+		//Assign number, title and description to the room
+		numberRoom = number;
 		nameRoom = title;
 		infoRoom = description;
 		//Blank exits
@@ -65,6 +71,14 @@ public class Room implements Serializable {
 	public Vector<Exit> getExits() {
 		//Return clone so not to modify original
 		return (Vector<Exit>)vecExits.clone();
+	}
+	//Return room number
+	public Integer getNumber() {
+		return numberRoom;
+	}
+	//Assigns room number
+	public void setNumber(Integer Number) {
+		numberRoom = Number;
 	}
 	//Return room name
 	public String getName() {

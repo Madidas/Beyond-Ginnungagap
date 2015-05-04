@@ -2,15 +2,10 @@ package game;
 import java.io.*;
 import java.util.*;
 
-//
-//
-// GameDemo
-//
+
 // Demonstrates a simple gaming system, loaded from
 // a persistent object store.
-//
-// Last modification date : December 20, 1997
-//
+
 class GameController 
 {
 	private static final String filename = "gameworld.dat";
@@ -32,6 +27,9 @@ class GameController
 
 		// Set the object stream to standard output
 		game.setOutputStream ( System.out, 40 );
+		
+		//Close object input stream
+		objectIn.close();
 	}
 
 	public static void main(String args[]) throws Exception
@@ -49,9 +47,13 @@ class GameController
 			game.showLocation();
 
 			command = InputReader.getPlayerInput();
-
+			
+			//Possible Narrator
+			if (command.compareTo("HELP") == 0){
+				Narrator.talkNarrator();
+			}
 			// Search for an exit match
-			for (Enumeration e = game.getCurrentLocation().getExits().elements(); e.hasMoreElements();)
+			for (Enumeration<Exit> e = game.getCurrentLocation().getExits().elements(); e.hasMoreElements();)
 			{
 				Exit an_exit = (Exit) e.nextElement();
 
@@ -66,7 +68,7 @@ class GameController
 					break;
 				}
 			}
-
+			
 			// Check to see if user wants to quit
 			if (command.compareTo( "QUIT" ) == 0)
 			{
