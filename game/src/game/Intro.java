@@ -99,7 +99,9 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+		//Creating world
 		WorldCreation.main(null);
+		//Start game
 		GameController gd = new GameController();
 		gd.play();
 	}

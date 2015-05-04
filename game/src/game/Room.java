@@ -7,7 +7,7 @@ public class Room implements Serializable {
 
 
 	//Room info
-	private Integer numberRoom;
+	private static  Integer numberRoom;
 	private String nameRoom;
 	private String infoRoom;
 	private Vector<Exit> vecExits;
@@ -73,7 +73,7 @@ public class Room implements Serializable {
 		return (Vector<Exit>)vecExits.clone();
 	}
 	//Return room number
-	public Integer getNumber() {
+	public static Integer getNumber() {
 		return numberRoom;
 	}
 	//Assigns room number

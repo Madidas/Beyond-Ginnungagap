@@ -14,8 +14,8 @@ public final class WorldCreation
 		game = new GameWorld();
 
 		// Create room objects
-		Room bunk = new Room ("Spaceship`s bunk bed", "You wake up in your sleep woken up by Death.");
-		Room testroom = new Room ("eufauhew", "hfrhefouahreof");
+		Room bunk = new Room (1 ,"Spaceship`s bunk bed", "You wake up in your sleep woken up by Death.");
+		Room testroom = new Room (2 ,"eufauhew", "hfrhefouahreof");
 
 
 		// Create exit objects
