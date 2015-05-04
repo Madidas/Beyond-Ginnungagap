@@ -5,22 +5,19 @@ import java.io.*;
 
 public class Room implements Serializable {
 
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = 1L;
+
 	//Room info
 	private String nameRoom;
 	private String infoRoom;
 	private Vector<Exit> vecExits;
-	private HashMap<String,Item> inventoryRoom;
+	//private HashMap<String,Item> inventoryRoom;
 
 	//Blank constructor
 	public Room() {
 		nameRoom = new String();
 		infoRoom = new String();
 		vecExits = new Vector<Exit>();
-		inventoryRoom = new HashMap<String, Item>();
+		//inventoryRoom = new HashMap<String, Item>();
 	}
 
 	//Partial constructor
@@ -33,9 +30,9 @@ public class Room implements Serializable {
 
 		//Blank exits
 		vecExits = new Vector<Exit>();
-
+		
 		//Blank Hashmap
-		inventoryRoom = new HashMap<String, Item>();
+		//inventoryRoom = new HashMap<String, Item>();
 	}
 
 	//Full constructor
@@ -46,7 +43,7 @@ public class Room implements Serializable {
 		//Blank exits
 		vecExits = new Vector<Exit>();
 		//Blank inventory
-		inventoryRoom = new HashMap<String, Item>();
+		//inventoryRoom = new HashMap<String, Item>();
 	}
 
 	//toString method
@@ -86,8 +83,8 @@ public class Room implements Serializable {
 		infoRoom = roomInfo;
 	}
 	//Add inventory to this room
-	public void addInventory (Inventory inventoryItems) {
-		inventoryRoom.putAll((Map<? extends String, ? extends Item>) inventoryItems);
+	//public void addInventory (Inventory inventoryItems) {
+		//inventoryRoom.putAll((Map<? extends String, ? extends Item>) inventoryItems);
 
 /*
 	class TrapRoom extends Room {
@@ -102,12 +99,9 @@ public class Room implements Serializable {
 
 	}
 */
-	static class TestRoom extends Room {
+	/*static class TestRoom extends Room {
 
-		/**
-		 *
-		 */
-		private static final long serialVersionUID = 1L;
+		
 		/*
 		public static Item testroomCanOfBeans = new Item.CanOfBeans();
 
@@ -127,4 +121,4 @@ public class Room implements Serializable {
 
 		}*/
 	}
-}
+

@@ -11,7 +11,7 @@ import java.util.*;
 //
 // Last modification date : December 20, 1997
 //
-class GameDemo
+class GameDemo 
 {
 	private static final String filename = "gameworld.dat";
 

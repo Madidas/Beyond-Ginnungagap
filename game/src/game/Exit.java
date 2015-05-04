@@ -7,6 +7,7 @@ package game;
 //
 public class Exit implements java.io.Serializable
 {
+	
 	/**
 	 * 
 	 */
@@ -25,6 +26,10 @@ public class Exit implements java.io.Serializable
 	public static final int SOUTHWEST = 10;
 	public static final int IN = 11;
 	public static final int OUT = 12;
+	public static final int ONE = 13;
+	public static final int TWO = 14;
+	public static final int THREE = 15;
+	
 
 	// String codes	
 	public static final String[] dirName = 
@@ -41,7 +46,11 @@ public class Exit implements java.io.Serializable
 		"SOUTHEAST",
 		"SOUTHWEST",
 		"IN",
-		"OUT"
+		"OUT",
+		"ONE",
+		"TWO",
+		"THREE"
+		
 	};
 
 	public static final String[] shortDirName = 
@@ -58,7 +67,11 @@ public class Exit implements java.io.Serializable
 		"SE",
 		"SW",
 		"I",
-		"O"		
+		"O",
+		"1",
+		"2",
+		"3"
+		
 	};
 
 	// Member variables

@@ -1,18 +1,10 @@
 package game;
 import java.util.*;
 import java.io.*;
-//
-//
-// GameWorld
-//
-// Last modification date : December 20, 1997
+
 //
 public class GameWorld implements Serializable
 {
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = 1L;
 
 	// List of Location objects
 	private Vector<Room> locations;
@@ -25,6 +17,7 @@ public class GameWorld implements Serializable
 
 	// Character width for descriptions
 	private int charWidth;
+	
 
 	// Output stream for gaming system
 	transient private WidthLimitedOutputStream output;
@@ -87,7 +80,9 @@ public class GameWorld implements Serializable
 	{
 		output = new WidthLimitedOutputStream(out, width) ;
 	}
-
+	
+	/**
+	
 	/** Shows the current game location */
 	public void showLocation()
 	{

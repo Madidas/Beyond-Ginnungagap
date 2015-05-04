@@ -2,7 +2,7 @@ package game;
 
 public class Menu {
 
-	public static void mainMenu() {
+	public static void mainMenu() throws Exception {
 		
 		while (true) {
 			System.out.println("Choose: \n1:Start New Game\n2:Load Saved Game\n"
@@ -10,8 +10,10 @@ public class Menu {
 			String number = InputReader.getPlayerInput();
 			switch(number) {
 			case "1": {
-				GameEngine ge = new GameEngine();
-				ge.startGame();
+				//WorldCreation wg = new WorldCreation();
+				WorldCreation.main(null);
+				GameDemo gd = new GameDemo();
+				gd.play();
 			}
 			case "2": {
 				continue;
