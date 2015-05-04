@@ -11,7 +11,7 @@ import java.util.*;
 //
 // Last modification date : December 20, 1997
 //
-class GameDemo 
+class GameController 
 {
 	private static final String filename = "gameworld.dat";
 
@@ -19,7 +19,7 @@ class GameDemo
 	private GameWorld game;
 
 	// Game demo constructor
-	public GameDemo() throws Exception
+	public GameController() throws Exception
 	{
 		// Create a file input stream
 		FileInputStream fin = new FileInputStream(filename);
@@ -36,7 +36,7 @@ class GameDemo
 
 	public static void main(String args[]) throws Exception
 	{
-		new GameDemo().play();
+		new GameController().play();
 	}
 
 	public void play() throws IOException

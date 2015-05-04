@@ -12,13 +12,12 @@ public class Menu {
 			String number = InputReader.getPlayerInput();
 			switch(number) {
 			case "1": {
-				//WorldCreation wg = new WorldCreation();
 				WorldCreation.main(null);
-				GameDemo gd = new GameDemo();
+				GameController gd = new GameController();
 				gd.play();
 			}
 			case "2": {
-				GameDemo gd = new GameDemo();
+				GameController gd = new GameController();
 				gd.play();
 			}
 			case "3": {
