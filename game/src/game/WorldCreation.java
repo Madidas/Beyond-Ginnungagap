@@ -14,34 +14,34 @@ public final class WorldCreation
 		game = new GameWorld();
 
 		// Create room objects
-		Room bunk 			= new Room ("Spaceship's bunk bed", "You wake up in your sleep woken up by Death.");
-		Room cabin 			= new Room ("Cabin", "You're in a cabin.");
-		Room corridor1 		= new Room ("Corridor", "You're in a dimly lit corridor.");
-		Room corridor3		= new Room ("Corridor", "You're in a dimly lit corridor. To west there's a vent large enough for you to crawl in. The corridor continues.");
-		Room vent1			= new Room ("Vent", "You're crawling in a tight ventilation system.");
-		Room corridor4 		= new Room ("Corridor", "You're in a dimly lit corridor. There's an elevator and the corridor continues.");
-		Room elevator1		= new Room ("Elevator", "You're inside an elevator. The elevator can go up and down.");
-		Room corridor5 		= new Room ("Corridor", "You're in a dimly lit corridor. There's a large storage room on your east side and the corridor continues.");
-		Room corridor6 		= new Room ("Corridor", "You're in a dimly lit corridor. There's a large storage room on your east side and the corridor continues.");
-		Room storageroom 	= new Room ("Storage Room", "You're in gigantic storage room. There's a vent in the south east corner.");
-		Room vent2			= new Room ("Vent", "You're crawling in a tight ventilation system.");
-		Room corridor7 		= new Room ("Corridor", "You're in a dimly lit corridor.");
+		Room bunk 			= new Room (1, "Spaceship's bunk bed", "You wake up in your sleep woken up by Death.");
+		Room cabin 			= new Room (2, "Cabin", "You're in a cabin.");
+		Room corridor1 		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
+		Room corridor3		= new Room (3, "Corridor", "You're in a dimly lit corridor. To west there's a vent large enough for you to crawl in. The corridor continues.");
+		Room vent1			= new Room (4, "Vent", "You're crawling in a tight ventilation system.");
+		Room corridor4 		= new Room (3, "Corridor", "You're in a dimly lit corridor. There's an elevator and the corridor continues.");
+		Room elevator1		= new Room (5, "Elevator", "You're inside an elevator. The elevator can go up and down.");
+		Room corridor5 		= new Room (3, "Corridor", "You're in a dimly lit corridor. There's a large storage room on your east side and the corridor continues.");
+		Room corridor6 		= new Room (3, "Corridor", "You're in a dimly lit corridor. There's a large storage room on your east side and the corridor continues.");
+		Room storageroom 	= new Room (6, "Storage Room", "You're in gigantic storage room. There's a vent in the south east corner.");
+		Room vent2			= new Room (4, "Vent", "You're crawling in a tight ventilation system.");
+		Room corridor7 		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
 		
-		Room corridor2 		= new Room ("Corridor", "You're in a dimly lit corridor. There's a vent and the corridor continues in three directions.");
-		Room vent3			= new Room ("Vent", "You're crawling in a tight ventilation system.");
-		Room corridor8		= new Room ("Corridor", "You're in a dimly lit corridor.");
-		Room corridor10		= new Room ("Corridor", "You're in a dimly lit corridor.");
-		Room elevator2		= new Room ("Elevator", "You're inside an elevator. The elevator can go up and down.");
-		Room dininghall		= new Room ("Dining Hall", "You're in a large dining hall.");
+		Room corridor2 		= new Room (3, "Corridor", "You're in a dimly lit corridor. There's a vent and the corridor continues in three directions.");
+		Room vent3			= new Room (4, "Vent", "You're crawling in a tight ventilation system.");
+		Room corridor8		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
+		Room corridor10		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
+		Room elevator2		= new Room (5, "Elevator", "You're inside an elevator. The elevator can go up and down.");
+		Room dininghall		= new Room (7, "Dining Hall", "You're in a large dining hall.");
 		
-		Room engineroom		= new Room ("Engine Room", "You're in a loud engine room.");
-		Room generatorroom	= new Room ("Generator Room", "You're in a loud generator room.");
+		Room engineroom		= new Room (8, "Engine Room", "You're in a loud engine room.");
+		Room generatorroom	= new Room (9, "Generator Room", "You're in a loud generator room.");
 		
-		Room corridor9		= new Room ("Corridor", "You're in a dimly lit corridor");
-		Room kitchen		= new Room ("Kitchen", "You're in a smelly kitchen. There's rotten food everywhere.");
-		Room kitchenstorage = new Room ("Kitchen Storage Room", "You're in the kitchen's storage room.");
-		Room kitchenfreezer = new Room ("Kitchen Freezer", "You're in the kitchen's freezer. It's freezingly cold.");
-		Room vent4			= new Room ("Vent", "You're crawling in a tight ventilation system.");
+		Room corridor9		= new Room (3, "Corridor", "You're in a dimly lit corridor");
+		Room kitchen		= new Room (10, "Kitchen", "You're in a smelly kitchen. There's rotten food everywhere.");
+		Room kitchenstorage = new Room (11, "Kitchen Storage Room", "You're in the kitchen's storage room.");
+		Room kitchenfreezer = new Room (12, "Kitchen Freezer", "You're in the kitchen's freezer. It's freezingly cold.");
+		Room vent4			= new Room (4, "Vent", "You're crawling in a tight ventilation system.");
 
 		// Create exit objects
 		Exit bunkout 				= new Exit ( Exit.OUT, cabin );
