@@ -5,15 +5,15 @@ public class Intro {
 	public void beginning() throws Exception {
 		int x = 40; //text speed in milliseconds
 		
-		System.out.println("  ____                             _    _____ _                                                       ");
-		System.out.println(" |  _ )                           | |  / ____(_)                                                      ");
-		System.out.println(" | |_) | ___ _   _  ___  _ __   __| | | |  __ _ _ __  _ __  _   _ _ __   __ _  __ _  __ _  __ _ _ __  ");
-		System.out.println(" |  _ < ( _ ) | | |/ _ )| '_ ) / _` | | | |_ | | '_ )| '_ )| | | | '_ ) / _` |/ _` |/ _` |/ _` | '_ ) ");
-		System.out.println(" | |_) |  __/ |_| | (_) | | | | (_| | | |__| | | | | | | | | |_| | | | | (_| | (_| | (_| | (_| | |_) |");
-		System.out.println(" |____/ (___||__, ||___/|_| |_|(__,_|  |_____|_|_| |_|_| |_|(__,_|_| |_||__, ||__,_||__, ||__,_| .__/ ");
-		System.out.println("              __/ |                                                      __/ |       __/ |     | |    ");
-		System.out.println("             |___/                                                      |___/       |___/      |_|    ");
-		System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+		System.out.println("   ____                             _    _____ _                                                       ");
+		System.out.println("  |  _ )                           | |  / ____(_)                                                      ");
+		System.out.println("  | |_) | ___ _   _  ___  _ __   __| | | |  __ _ _ __  _ __  _   _ _ __   __ _  __ _  __ _  __ _ _ __  ");
+		System.out.println("  |  _ < ( _ ) | | |/ _ )| '_ ) / _` | | | |_ | | '_ )| '_ )| | | | '_ ) / _` |/ _` |/ _` |/ _` | '_ ) ");
+		System.out.println("  | |_) |  __/ |_| | (_) | | | | (_| | | |__| | | | | | | | | |_| | | | | (_| | (_| | (_| | (_| | |_) |");
+		System.out.println("  |____/ (___||__, ||___/|_| |_|(__,_|  |_____|_|_| |_|_| |_||__,_|_| |_||__, ||__,_||__, ||__,_| .__/ ");
+		System.out.println("               __/ |                                                      __/ |       __/ |     | |    ");
+		System.out.println("              |___/                                                      |___/       |___/      |_|    ");
+		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 		Thread.sleep(1500);
 		System.out.println();
 		
@@ -82,7 +82,7 @@ public class Intro {
 		System.out.println();
 		
 
-		String text8 = "     Spaceship that you are currently traveling is collision course with a nearby planet.";
+		String text8 = "      Spaceship that you are currently traveling is collision course with a nearby planet.";
 		for (int i = 0; i < text8.length(); i++) {
 		    System.out.print(text8.charAt(i));
 		    Thread.sleep(x);
@@ -98,6 +98,9 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		
+		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+		
 		
 		//Creating world
 		WorldCreation.main(null);
