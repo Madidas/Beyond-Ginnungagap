@@ -95,6 +95,4 @@ public class Intro {
 		GameController gd = new GameController();
 		gd.play();
 	}
-	
-
 }

@@ -12,9 +12,8 @@ public class Menu {
 			String number = InputReader.getPlayerInput();
 			switch(number) {
 			case "1": {
-				WorldCreation.main(null);
-				GameController gd = new GameController();
-				gd.play();
+				Intro intro = new Intro();
+				intro.beginning();
 			}
 			case "2": {
 				GameController gd = new GameController();
