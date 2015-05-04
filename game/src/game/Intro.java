@@ -25,6 +25,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+
 		String text2 = "  Understandably you feel confused. Death apologizes for his sudden appearance and tries to calm you down.";
 		for (int i = 0; i < text2.length(); i++) {
 		    System.out.print(text2.charAt(i));
@@ -33,6 +34,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+
 		String text3 = "Before you can put together a coherent thought he asks: “WHAT IS YOUR NAME?”, to which you answer perplexed:";
 		for (int i = 0; i < text3.length(); i++) {
 		    System.out.print(text3.charAt(i));
@@ -43,6 +45,7 @@ public class Intro {
 		
 		String playerName = InputReader.getPlayerInput();
 
+
 		String text4 = "                 You ask where you are and why are you there talking to Death.";
 		for (int i = 0; i < text4.length(); i++) {
 		    System.out.print(text4.charAt(i));
@@ -51,6 +54,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+	
 		String text5 = "        Death answers: “You’re on a spaceship " +playerName+ " and I’m here to collect your soul.”";
 		for (int i = 0; i < text5.length(); i++) {
 		    System.out.print(text5.charAt(i));
@@ -59,6 +63,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+	
 		String text6 = "That information causes even more confusion. That confusion leads you to asking Death more questions.";
 		for (int i = 0; i < text6.length(); i++) {
 		    System.out.print(text6.charAt(i));
@@ -67,6 +72,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+
 		String text7 = "     Death helpfully points out that your current physical well being will end rather soon.";
 		for (int i = 0; i < text7.length(); i++) {
 		    System.out.print(text7.charAt(i));
@@ -75,6 +81,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+
 		String text8 = "     Spaceship that you are currently traveling is collision course with a nearby planet.";
 		for (int i = 0; i < text8.length(); i++) {
 		    System.out.print(text8.charAt(i));
@@ -83,6 +90,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
+
 		String text9 = "                 This little snippet of information causes you to panic.";
 		for (int i = 0; i < text9.length(); i++) {
 		    System.out.print(text9.charAt(i));
