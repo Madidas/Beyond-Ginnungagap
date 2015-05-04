@@ -4,8 +4,10 @@ public class Menu {
 
 	public static void mainMenu() throws Exception {
 		
-		while (true) {
-			System.out.println("Choose: \n1:Start New Game\n2:Load Saved Game\n"
+		boolean keepGoing = true;
+		
+		while (keepGoing == true) {
+			System.out.println("Choose number: \n1:Start New Game\n2:Load Saved Game\n"
 					+ "3.Quit");
 			String number = InputReader.getPlayerInput();
 			switch(number) {
@@ -16,11 +18,13 @@ public class Menu {
 				gd.play();
 			}
 			case "2": {
-				continue;
+				GameDemo gd = new GameDemo();
+				gd.play();
 			}
 			case "3": {
 				System.out.println("Goodbey... You tiny Heathen.");
-				System.exit(0);
+				keepGoing = false;
+				
 			}
 	}
 }
