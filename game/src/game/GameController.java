@@ -52,11 +52,11 @@ class GameController
 			}
 			
 			else if (game.getCurrentLocation().getName().equals("Emergency Shuttle")) {
-				End.ending();
+				End.endingS();
 			}
 			
 			else if (game.getCurrentLocation().getName().equals("Control Room")) {
-				End.ending();
+				End.endingCR();
 			}
 			
 
