@@ -3,7 +3,7 @@ package game;
 public class Intro {
 	
 	public void beginning() throws Exception {
-		int x = 40; //text speed in milliseconds
+		int x = 10; //text speed in milliseconds
 		
 		System.out.println("   ____                             _    _____ _                                                       ");
 		System.out.println("  |  _ )                           | |  / ____(_)                                                      ");
@@ -14,7 +14,7 @@ public class Intro {
 		System.out.println("               __/ |                                                      __/ |       __/ |     | |    ");
 		System.out.println("              |___/                                                      |___/       |___/      |_|    ");
 		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		System.out.println();
 		
 		String text1 = "             You wake up in a bed to a voice talking to you introducing himself as Death.";
@@ -24,6 +24,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 
 		String text2 = "  Understandably you feel confused. Death apologizes for his sudden appearance and tries to calm you down.";
@@ -33,6 +34,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 
 		String text3 = "Before you can put together a coherent thought he asks: “WHAT IS YOUR NAME?”, to which you answer perplexed:";
@@ -53,6 +55,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 	
 		String text5 = "        Death answers: “You’re on a spaceship " +playerName+ " and I’m here to collect your soul.”";
@@ -62,6 +65,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 	
 		String text6 = "That information causes even more confusion. That confusion leads you to asking Death more questions.";
@@ -71,6 +75,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 
 		String text7 = "     Death helpfully points out that your current physical well being will end rather soon.";
@@ -80,6 +85,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 
 		String text8 = "      Spaceship that you are currently traveling is collision course with a nearby planet.";
@@ -89,6 +95,7 @@ public class Intro {
 		}
 		System.out.println();
 		System.out.println();
+		Thread.sleep(500); //small pause
 		
 
 		String text9 = "                 This little snippet of information causes you to panic.";
@@ -100,6 +107,8 @@ public class Intro {
 		System.out.println();
 		
 		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+		
+		End.ending();
 		
 		
 		//Creating world
