@@ -40,7 +40,7 @@ public final class WorldCreation
 		Room corridor9		= new Room (3, "Corridor", "You're in a dimly lit corridor");
 		Room kitchen		= new Room (10, "Kitchen", "You're in a smelly kitchen. There's rotten food everywhere.");
 		Room kitchenstorage = new Room (11, "Kitchen Storage Room", "You're in the kitchen's storage room.");
-		Room kitchenfreezer = new Room (12, "Kitchen Freezer", "You're in the kitchen's freezer. It's freezingly cold.");
+		Room kitchenfreezer = new Room (12, "Kitchen Freezer", "You're in the kitchen's freezer. It's freezingly cold and the door slams shut behind you. You're stuck!");
 		Room vent4			= new Room (4, "Vent", "You're crawling in a tight ventilation system.");
 		
 		Room controlroom	= new Room (13, "Control Room", "You're in the space ship's control room!");
@@ -155,7 +155,7 @@ public final class WorldCreation
 		Exit vent4out				= new Exit (Exit.OUT, kitchen);
 		
 		Exit kitchenstoragewest		= new Exit (Exit.WEST, kitchen);
-		Exit kitchenfreezerwest		= new Exit (Exit.WEST, kitchen);
+		//Exit kitchenfreezerwest		= new Exit (Exit.WEST, kitchen);
 		
 		Exit controlroomsouthwest	= new Exit (Exit.SOUTHWEST, corridor11);
 		Exit controlroomsoutheast	= new Exit (Exit.SOUTHEAST, corridor17);
