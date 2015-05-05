@@ -24,7 +24,7 @@ public class End {
 		}
 		System.out.println();
 		
-		String text3 = "           before long a text appears on the screen: “Turn on auto-pilot”."; 
+		String text3 = "           before long a text appears on the screen: \"Turn on auto-pilot.\""; 
 		for (int i = 0; i < text3.length(); i++) {
 			System.out.print(text3.charAt(i));
 			Thread.sleep(x);
@@ -51,7 +51,7 @@ public class End {
 		System.out.println();
 		Thread.sleep(500); //small pause
 	
-		String text6 = "     “You may have gotten off the spaceship, but that doesn’t mean that you’re safe.”"; 
+		String text6 = "     \"You may have gotten off the spaceship, but that doesn't mean that you're safe.\""; 
 		for (int i = 0; i < text6.length(); i++) {
 			System.out.print(text6.charAt(i));
 			Thread.sleep(x);
@@ -84,7 +84,7 @@ public class End {
 		}
 		System.out.println();
 	
-		String text3 = "       a text appears on the screen: “Stabilazing the ship. Embrace for an emergency landing.”"; 
+		String text3 = "       a text appears on the screen: \"Stabilazing the ship. Embrace for an emergency landing.\""; 
 		for (int i = 0; i < text3.length(); i++) {
 			System.out.print(text3.charAt(i));
 	    	Thread.sleep(x);
@@ -111,7 +111,7 @@ public class End {
 		System.out.println();
 		Thread.sleep(500); //small pause
 	
-		String text6 = "         “You may have avoided death this time, but that doesn’t mean that you’re safe.”"; 
+		String text6 = "         \"You may have avoided death this time, but that doesn't mean that you're safe.\""; 
 		for (int i = 0; i < text6.length(); i++) {
 			System.out.print(text6.charAt(i));
 			Thread.sleep(x);
