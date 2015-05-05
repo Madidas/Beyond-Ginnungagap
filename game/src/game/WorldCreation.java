@@ -272,7 +272,7 @@ public final class WorldCreation
 	    vent4.addExit(vent4up);
 	    vent4.addExit(vent4out);
 	    kitchenstorage.addExit(kitchenstoragewest);
-		kitchenfreezer.addExit(kitchenfreezerwest);			
+		//kitchenfreezer.addExit(kitchenfreezerwest);			
 		controlroom.addExit(controlroomsouthwest);
 		controlroom.addExit(controlroomsoutheast);		
 		corridor11.addExit(corridor11in);
@@ -417,7 +417,7 @@ public final class WorldCreation
 	    game.addExit(vent4up);
 	    game.addExit(vent4out);
 	    game.addExit(kitchenstoragewest);
-		game.addExit(kitchenfreezerwest);			
+		//game.addExit(kitchenfreezerwest);			
 		game.addExit(controlroomsouthwest);
 		game.addExit(controlroomsoutheast);		
 		game.addExit(corridor11in);
