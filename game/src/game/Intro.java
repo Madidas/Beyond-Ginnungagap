@@ -58,7 +58,7 @@ public class Intro {
 		Thread.sleep(500); //small pause
 		
 	
-		String text5 = "        Death answers: “You're on a spaceship " +playerName+ " and I'm here to collect your soul.“";
+		String text5 = "        Death answers: \"You're on a spaceship " +playerName+ " and I'm here to collect your soul.\"";
 		for (int i = 0; i < text5.length(); i++) {
 		    System.out.print(text5.charAt(i));
 		    Thread.sleep(x);
