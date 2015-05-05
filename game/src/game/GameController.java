@@ -37,7 +37,7 @@ class GameController
 		new GameController().play();
 	}
 
-	public void play() throws IOException
+	public void play() throws Exception
 	{
 		String command = null;
 
@@ -48,6 +48,10 @@ class GameController
 			if (game.getCurrentLocation().getName().equals("Captain's Cabin")) {
 				System.out.println("You found a keycard!");
 				gcPlayer.hasKeycard = true;
+			}
+			
+			else if (game.getCurrentLocation().getName().equals("Control Room")) {
+				End.ending();
 			}
 
 			command = InputReader.getPlayerInput();
