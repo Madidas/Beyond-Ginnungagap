@@ -64,7 +64,7 @@ public class WidthLimitedOutputStream
 		print (str);
 		m_out.println();
 	}
-
+	
 	/** Prints a blank line */
 	public void println ()
 	{
