@@ -84,8 +84,8 @@ public class GameWorld implements Serializable
 	/**
 	
 	/** Shows the current game location */
-	public String showNumber() {
-		String number = currentLocation.getNumber();
+	public Integer showNumber() {
+		Integer number = currentLocation.getNumber();
 		return number;
 	}
 	
