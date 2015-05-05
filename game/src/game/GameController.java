@@ -50,9 +50,14 @@ class GameController
 				gcPlayer.hasKeycard = true;
 			}
 			
+			else if (game.getCurrentLocation().getName().equals("Emergency Shuttle")) {
+				End.ending();
+			}
+			
 			else if (game.getCurrentLocation().getName().equals("Control Room")) {
 				End.ending();
 			}
+			
 
 			command = InputReader.getPlayerInput();
 			
