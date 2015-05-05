@@ -107,11 +107,7 @@ public class Intro {
 		System.out.println();
 		
 		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
-<<<<<<< HEAD
-		
-=======
-		
->>>>>>> refs/heads/inventorytest
+
 		
 		//Creating world
 		WorldCreation.main(null);

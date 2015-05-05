@@ -45,6 +45,7 @@ class GameController
 		{
 			// Show location
 			game.showLocation();
+			
 			if (game.getCurrentLocation().getName().equals("Captain's Cabin")) {
 				System.out.println("You found a keycard!");
 				gcPlayer.hasKeycard = true;
