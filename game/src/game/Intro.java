@@ -37,7 +37,7 @@ public class Intro {
 		Thread.sleep(500); //small pause
 		
 
-		String text3 = "Before you can put together a coherent thought he asks: â€œWHAT IS YOUR NAME?â€�, to which you answer perplexed:";
+		String text3 = "Before you can put together a coherent thought he asks: “WHAT IS YOUR NAME?“, to which you answer perplexed:";
 		for (int i = 0; i < text3.length(); i++) {
 		    System.out.print(text3.charAt(i));
 		    Thread.sleep(x);
@@ -58,7 +58,7 @@ public class Intro {
 		Thread.sleep(500); //small pause
 		
 	
-		String text5 = "        Death answers: â€œYouâ€™re on a spaceship " +playerName+ " and Iâ€™m here to collect your soul.â€�";
+		String text5 = "        Death answers: “You're on a spaceship " +playerName+ " and I'm here to collect your soul.“";
 		for (int i = 0; i < text5.length(); i++) {
 		    System.out.print(text5.charAt(i));
 		    Thread.sleep(x);
