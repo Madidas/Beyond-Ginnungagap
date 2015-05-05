@@ -229,12 +229,10 @@ public final class WorldCreation
 	    vent1.addExit(vent1north);				
 		vent1.addExit(vent1up);
 	    vent1.addExit(vent1out);
-		elevator1.addExit(elevator1up);			
-			               		                
+		elevator1.addExit(elevator1up);						               		                
 	    storageroom.addExit(storageroomnorth);		
 	    storageroom.addExit(storageroomsouth);		
-	    storageroom.addExit(storageroomin);			
-			                       
+	    storageroom.addExit(storageroomin);						                       
 	    vent2.addExit(vent2west);				
 	    vent2.addExit(vent2north);				
 		vent2.addExit(vent2up);
@@ -274,56 +272,43 @@ public final class WorldCreation
 	    vent4.addExit(vent4up);
 	    vent4.addExit(vent4out);
 	    kitchenstorage.addExit(kitchenstoragewest);
-		kitchenfreezer.addExit(kitchenfreezerwest);	
-		
+		kitchenfreezer.addExit(kitchenfreezerwest);			
 		controlroom.addExit(controlroomsouthwest);
-		controlroom.addExit(controlroomsoutheast);
-		
+		controlroom.addExit(controlroomsoutheast);		
 		corridor11.addExit(corridor11in);
 		corridor11.addExit(corridor11north);
-		corridor11.addExit(corridor11south);
-		
+		corridor11.addExit(corridor11south);		
 		elevator4.addExit(elevator4down);
 		elevator4.addExit(elevator4out);
-
 		corridor12.addExit(corridor12in);
 		corridor12.addExit(corridor12north);
-		corridor12.addExit(corridor12south);
-		
-		cabin2.addExit(cabin2out);
-		
+		corridor12.addExit(corridor12south);	
+		cabin2.addExit(cabin2out);		
 		corridor13.addExit(corridor13in);
 		corridor13.addExit(corridor13south);
-		corridor13.addExit(corridor13north);
-		
+		corridor13.addExit(corridor13north);		
 		vent7.addExit(vent7down);
 		vent7.addExit(vent7south);
-		vent7.addExit(vent7out);
-		
+		vent7.addExit(vent7out);		
 		corridor14.addExit(corridor14west);
 		corridor14.addExit(corridor14east);
-		corridor14.addExit(corridor14in);
-		
+		corridor14.addExit(corridor14in);		
 		hangar.addExit(hangarin);
-		hangar.addExit(hangareast);
-		
-		
+		hangar.addExit(hangareast);		
 		corridor15.addExit(corridor15in);
 		corridor15.addExit(corridor15west);
-		corridor15.addExit(corridor15north);
-		
+		corridor15.addExit(corridor15north);	
 		corridor16.addExit(corridor16in);
 		corridor16.addExit(corridor16north);
-		corridor16.addExit(corridor16south);
-		
+		corridor16.addExit(corridor16south);		
 		corridor17.addExit(corridor17in);
 		corridor17.addExit(corridor17north);
-		corridor17.addExit(corridor17south);
-		
+		corridor17.addExit(corridor17south);		
 		vent8.addExit(vent8down);
 		vent8.addExit(vent8south);
 		vent8.addExit(vent8out);
 
+		
 		// Add locations/exits to our game lists
 		game.addRoom(bunk);
 		game.addRoom(cabin);
@@ -349,8 +334,7 @@ public final class WorldCreation
 		game.addRoom(kitchen);
 		game.addRoom(kitchenstorage);
 		game.addRoom(kitchenfreezer);
-		game.addRoom(vent4);
-		
+		game.addRoom(vent4);		
 		game.addRoom(controlroom);
 		game.addRoom(corridor11);
 		game.addRoom(elevator4);		
@@ -358,21 +342,16 @@ public final class WorldCreation
 		game.addRoom(cabin2);
 		game.addRoom(corridor13);
 		game.addRoom(vent7); 
-		game.addRoom(corridor14);
-		
+		game.addRoom(corridor14);		
 		game.addRoom(hangar);
-		game.addRoom(escapeshuttle);
-		
+		game.addRoom(escapeshuttle);		
 		game.addRoom(corridor15);
 		game.addRoom(vent5);
 		game.addRoom(elevator3);
 		game.addRoom(corridor16);
-		game.addRoom(vent6);
-		
+		game.addRoom(vent6);		
 		game.addRoom(corridor17);
-		game.addRoom(vent8);
-				
-		
+		game.addRoom(vent8);						
 		game.addExit(bunkout);
 		game.addExit(cabinin);
 		game.addExit(cabinout);
@@ -396,12 +375,10 @@ public final class WorldCreation
 		game.addExit(vent1up);
 	    game.addExit(vent1out);
 		game.addExit(elevator1up);
-	    game.addExit(elevator1out);
-			               		                
+	    game.addExit(elevator1out);			               		                
 	    game.addExit(storageroomnorth);		
 	    game.addExit(storageroomsouth);		
-	    game.addExit(storageroomin);			
-			                       
+	    game.addExit(storageroomin);						                       
 	    game.addExit(vent2west);				
 	    game.addExit(vent2north);				
 		game.addExit(vent2up);
@@ -440,52 +417,38 @@ public final class WorldCreation
 	    game.addExit(vent4up);
 	    game.addExit(vent4out);
 	    game.addExit(kitchenstoragewest);
-		game.addExit(kitchenfreezerwest);	
-		
+		game.addExit(kitchenfreezerwest);			
 		game.addExit(controlroomsouthwest);
-		game.addExit(controlroomsoutheast);
-		
+		game.addExit(controlroomsoutheast);		
 		game.addExit(corridor11in);
 		game.addExit(corridor11north);
-		game.addExit(corridor11south);
-		
+		game.addExit(corridor11south);	
 		game.addExit(elevator4down);
 		game.addExit(elevator4out);
-
 		game.addExit(corridor12in);
 		game.addExit(corridor12north);
-		game.addExit(corridor12south);
-		
+		game.addExit(corridor12south);	
 		game.addExit(cabin2out);
-		
 		game.addExit(corridor13in);
 		game.addExit(corridor13south);
 		game.addExit(corridor13north);
-		
 		game.addExit(vent7down);
 		game.addExit(vent7south);
 		game.addExit(vent7out);
-		
 		game.addExit(corridor14west);
 		game.addExit(corridor14east);
 		game.addExit(corridor14in);
-		
 		game.addExit(hangarin);
 		game.addExit(hangareast);
-		
-		
 		game.addExit(corridor15in);
 		game.addExit(corridor15west);
 		game.addExit(corridor15north);
-		
 		game.addExit(corridor16in);
 		game.addExit(corridor16north);
-		game.addExit(corridor16south);
-		
+		game.addExit(corridor16south);		
 		game.addExit(corridor17in);
 		game.addExit(corridor17north);
-		game.addExit(corridor17south);
-		
+		game.addExit(corridor17south);		
 		game.addExit(vent8down);
 		game.addExit(vent8south);
 		game.addExit(vent8out);
