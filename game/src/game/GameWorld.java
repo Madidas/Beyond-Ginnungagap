@@ -54,7 +54,7 @@ public class GameWorld implements Serializable
 	/** Assigns a new location to the current location of the player */
 	public void setCurrentLocation(Room newRoom)
 	{
-		currentLocation = newRoom;
+		currentLocation = newRoom;		
 	}
 
 	/** Adds a new exit to the gaming system */
@@ -100,18 +100,19 @@ public class GameWorld implements Serializable
 		output.println();
 
 		// Show available exits
-		output.println ( "Available exits :" );
-
-		// Traverse elements of vector
-		for (Enumeration<?> e = currentLocation.getExits().elements(); e.hasMoreElements();)
-		{
-			// Get next exit
-			Exit an_exit = (Exit) e.nextElement();
-
-			// Print exit to our output stream
-			output.println (an_exit.toString());
+		if (!currentLocation.getName().equals("Keypad")) {
+			output.println ( "Available exits :" );
+	
+			// Traverse elements of vector
+			for (Enumeration<?> e = currentLocation.getExits().elements(); e.hasMoreElements();)
+			{
+				// Get next exit
+				Exit an_exit = (Exit) e.nextElement();
+	
+				// Print exit to our output stream
+				output.println (an_exit.toString());
+			}
 		}
-		
 		//Return value for current room
 	}
 

@@ -45,6 +45,10 @@ class GameController
 		{
 			// Show location
 			game.showLocation();
+			if (game.getCurrentLocation().getName().equals("Captain's Cabin")) {
+				System.out.println("You found a keycard!");
+				gcPlayer.hasKeycard = true;
+			}
 
 			command = InputReader.getPlayerInput();
 			
@@ -64,6 +68,7 @@ class GameController
 				{
 					// Set location to the location pointed to by exit
 					game.setCurrentLocation( an_exit.getLeadsTo() );
+
 
 					// No need to search exits anymore
 					break;
@@ -100,4 +105,6 @@ class GameController
 			}
 		}
 	}
+	
+	Player gcPlayer = new Player();
 }

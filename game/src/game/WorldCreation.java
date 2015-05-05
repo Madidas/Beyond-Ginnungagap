@@ -16,6 +16,7 @@ public final class WorldCreation
 		// Create room objects
 		Room bunk 			= new Room (1, "Spaceship's bunk bed", "You wake up in your sleep woken up by Death.");
 		Room cabin 			= new Room (2, "Cabin", "You're in a cabin.");
+		Room keypad			= new Room (69, "Keypad", "You need to enter a keycode to access this room.");
 		Room corridor1 		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
 		Room corridor3		= new Room (3, "Corridor", "You're in a dimly lit corridor. To west there's a vent large enough for you to crawl in. The corridor continues.");
 		Room vent1			= new Room (4, "Vent", "You're crawling in a tight ventilation system.");
@@ -47,7 +48,7 @@ public final class WorldCreation
 		Room corridor11		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
 		Room elevator4		= new Room (5, "Elevator", "You're inside an elevator. The elevator can go down.");		
 		Room corridor12		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
-		Room cabin2			= new Room (2, "Cabin", "You're in the captain's cabin.");
+		Room cabin2			= new Room (2, "Captain's Cabin", "You're in the captain's cabin.");
 		Room corridor13		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
 		Room vent7			= new Room (4, "Vent", "You're crawling in a tight ventilation system."); 
 		Room corridor14		= new Room (3, "Corridor", "You're in a dimly lit corridor.");
@@ -66,9 +67,9 @@ public final class WorldCreation
 		
 
 		// Create exit objects
-		Exit bunkout 				= new Exit ( Exit.OUT, cabin );
+		Exit bunkout 				= new Exit (Exit.OUT, cabin);
 		
-		Exit cabinin 				= new Exit ( Exit.IN, bunk);
+		Exit cabinin 				= new Exit (Exit.IN, bunk);
 		Exit cabinout				= new Exit (Exit.OUT, corridor1);
 		
 		Exit corridor1in	 		= new Exit (Exit.IN, cabin);
@@ -161,8 +162,10 @@ public final class WorldCreation
 		Exit controlroomsoutheast	= new Exit (Exit.SOUTHEAST, corridor17);
 		
 		Exit corridor11in			= new Exit (Exit.IN, elevator4);
-		Exit corridor11north		= new Exit (Exit.NORTH, controlroom);
+		Exit corridor11north		= new Exit (Exit.NORTH, keypad);
 		Exit corridor11south		= new Exit (Exit.SOUTH, corridor12);
+		
+		Exit keypadaccess			= new Exit (Exit.KEYCODE, controlroom);
 		
 		Exit elevator4down			= new Exit (Exit.DOWN, elevator2);
 		Exit elevator4out			= new Exit (Exit.OUT, corridor11);
@@ -277,7 +280,8 @@ public final class WorldCreation
 		controlroom.addExit(controlroomsoutheast);		
 		corridor11.addExit(corridor11in);
 		corridor11.addExit(corridor11north);
-		corridor11.addExit(corridor11south);		
+		corridor11.addExit(corridor11south);
+		keypad.addExit(keypadaccess);
 		elevator4.addExit(elevator4down);
 		elevator4.addExit(elevator4out);
 		corridor12.addExit(corridor12in);
@@ -307,11 +311,13 @@ public final class WorldCreation
 		vent8.addExit(vent8down);
 		vent8.addExit(vent8south);
 		vent8.addExit(vent8out);
+		
 
 		
 		// Add locations/exits to our game lists
 		game.addRoom(bunk);
 		game.addRoom(cabin);
+		game.addRoom(keypad);
 		game.addRoom(corridor1);
 		game.addRoom(corridor2);
 		game.addRoom(corridor3);
@@ -351,10 +357,14 @@ public final class WorldCreation
 		game.addRoom(corridor16);
 		game.addRoom(vent6);		
 		game.addRoom(corridor17);
-		game.addRoom(vent8);						
+		game.addRoom(vent8);
+		
+		
+		
 		game.addExit(bunkout);
 		game.addExit(cabinin);
 		game.addExit(cabinout);
+		game.addExit(keypadaccess);
 		game.addExit(corridor1in);
 		game.addExit(corridor1north);
 		game.addExit(corridor1south);
