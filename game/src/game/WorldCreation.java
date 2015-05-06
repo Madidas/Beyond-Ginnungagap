@@ -130,7 +130,7 @@ public final class WorldCreation
 		Exit corridor10north		= new Exit (Exit.NORTH, engineroom);
 		
 		Exit elevator2up			= new Exit (Exit.UP, elevator4);
-		Exit elevator2out			= new Exit (Exit.UP, corridor10);
+		Exit elevator2out			= new Exit (Exit.OUT, corridor10);
 		
 		Exit dininghalleast			= new Exit (Exit.EAST, corridor10);
 		Exit dininghallwest			= new Exit (Exit.WEST, corridor9);
