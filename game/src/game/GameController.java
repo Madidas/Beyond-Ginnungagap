@@ -64,13 +64,10 @@ class GameController
 			
 			//Possible Narrator
 			if (command.compareTo("HELP") == 0){
-				System.out.println(game.showNumber());
 				
-				/*game.getCurrentLocation().getName(); 
-				Narrator.talkNarrator();
-				
-					/*Object number = game.showNumber();
-				Narrator.talkNarrator(number);*/
+				Integer roomNumber = game.getCurrentLocation().getNumber(); 
+				//System.out.println(roomName);
+				Narrator.talkNarrator(roomNumber);
 			}
 			// Search for an exit match
 			for (Enumeration<Exit> e = game.getCurrentLocation().getExits().elements(); e.hasMoreElements();)

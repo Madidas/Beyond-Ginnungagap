@@ -83,11 +83,12 @@ public class GameWorld implements Serializable
 	
 	/**
 	
-	/** Shows the current game location */
+	/** Shows the current game location
+	Below code was not needed... Tried calling number at wrong place.
 	public Integer showNumber() {
-		Integer number = getCurrentLocation().getNumber();
+		Integer number = game.currentLocation().getNumber();
 		return number;
-	}
+	}*/
 	
 	public void showLocation()
 	{

@@ -45,7 +45,7 @@ public class Intro {
 		System.out.println();
 		System.out.println();
 		
-		String playerName = InputReader.getPlayerInput();
+		String playerName = playerName();
 
 
 		String text4 = "                 You ask where you are and why are you there talking to Death.";
@@ -108,11 +108,15 @@ public class Intro {
 		
 		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 
-		
 		//Creating world
 		WorldCreation.main(null);
 		//Start game
 		GameController gd = new GameController();
 		gd.play();
+	}
+	
+	public static String playerName() {
+		String name = InputReader.getPlayerInput();
+		return name;
 	}
 }
