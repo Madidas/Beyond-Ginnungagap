@@ -5,7 +5,7 @@ public class End {
 	public static void endingS() throws Exception {
 		
 	
-		int x = 40; //text speed in milliseconds
+		int x = 10; //text speed in milliseconds
 	
 		System.out.println(" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 		String text1 = "            You see the escape shuttle in front of you and quickly enter it."; 
@@ -88,15 +88,6 @@ public class End {
 		for (int i = 0; i < text3.length(); i++) {
 			System.out.print(text3.charAt(i));
 	    	Thread.sleep(x);
-		}
-		System.out.println();
-		System.out.println();
-		Thread.sleep(500); //small pause
-	
-		String text4 = ""; 
-		for (int i = 0; i < text4.length(); i++) {
-			System.out.print(text4.charAt(i));
-			Thread.sleep(x);
 		}
 		System.out.println();
 		System.out.println();

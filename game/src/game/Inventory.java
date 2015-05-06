@@ -1,4 +1,4 @@
-package game;
+/*package game;
 
 import java.util.HashMap;
 
@@ -35,4 +35,4 @@ public class Inventory {
 	public HashMap<String,Item> getInventory() {
 		return inventoryItems;
 	}
-}
+}*/

@@ -2,6 +2,11 @@ package game;
 
 public class Intro {
 	
+	private static String playerName() {
+		String name = InputReader.getPlayerInput();
+		return name;
+	}
+	
 	public void beginning() throws Exception {
 		int x = 10; //text speed in milliseconds
 		
@@ -113,10 +118,5 @@ public class Intro {
 		//Start game
 		GameController gd = new GameController();
 		gd.play();
-	}
-	
-	public static String playerName() {
-		String name = InputReader.getPlayerInput();
-		return name;
 	}
 }

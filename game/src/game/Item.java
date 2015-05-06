@@ -1,4 +1,4 @@
-package game;
+/*package game;
 
 public class Item {
 	private String itemName = "Item name";
@@ -32,7 +32,7 @@ public class Item {
 	}
 	
 	public interface Throwable {
-	}*/
+	}
 	
 	public interface Edible {
 		public void eat();
@@ -60,4 +60,4 @@ public class Item {
 			System.out.println("Eating " + this.itemName);
 		}
 	}
-}
+}*/
