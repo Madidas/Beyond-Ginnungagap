@@ -30,6 +30,7 @@ public class Exit implements java.io.Serializable
 	public static final int TWO = 14;
 	public static final int THREE = 15;
 	public static final int KEYCODE = 16;
+	public static final int CANCEL = 17;
 	
 
 	// String codes	
@@ -51,7 +52,8 @@ public class Exit implements java.io.Serializable
 		"ONE",
 		"TWO",
 		"THREE",
-		"1234"
+		"1234",
+		"CANCEL"
 		
 	};
 
@@ -73,7 +75,8 @@ public class Exit implements java.io.Serializable
 		"1",
 		"2",
 		"3",
-		"1234"
+		"1234",
+		"CANCEL"
 		
 	};
 

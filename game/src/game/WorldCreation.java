@@ -166,6 +166,7 @@ public final class WorldCreation
 		Exit corridor11south		= new Exit (Exit.SOUTH, corridor12);
 		
 		Exit keypadaccess			= new Exit (Exit.KEYCODE, controlroom);
+		Exit keypadcancel			= new Exit (Exit.CANCEL, corridor11);
 		
 		Exit elevator4down			= new Exit (Exit.DOWN, elevator2);
 		Exit elevator4out			= new Exit (Exit.OUT, corridor11);
@@ -282,6 +283,7 @@ public final class WorldCreation
 		corridor11.addExit(corridor11north);
 		corridor11.addExit(corridor11south);
 		keypad.addExit(keypadaccess);
+		keypad.addExit(keypadcancel);
 		elevator4.addExit(elevator4down);
 		elevator4.addExit(elevator4out);
 		corridor12.addExit(corridor12in);
@@ -365,6 +367,7 @@ public final class WorldCreation
 		game.addExit(cabinin);
 		game.addExit(cabinout);
 		game.addExit(keypadaccess);
+		game.addExit(keypadcancel);
 		game.addExit(corridor1in);
 		game.addExit(corridor1north);
 		game.addExit(corridor1south);
